@@ -22,7 +22,7 @@ In order to retrieve this folder, you have to go to the right folder using CMD, 
   vendor/
 ```
 # During your project
-If you add classes to the Models folder, don't forget to update the autoloader using the follocing command : 
+If you add classes to the Models folder, don't forget to update the autoloader using the following command : 
 ```bash
   $ composer update
 ```
