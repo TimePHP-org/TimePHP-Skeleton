@@ -1,6 +1,6 @@
 {
     "name": "mranyx/skeleton",
-    "type": "template",
+    "type": "project",
     "description": "Simple project stucture to start a php project",
     "license": "MIT",
     "keywords": ["template", "mvc", "composer", "php", "autoload"],
