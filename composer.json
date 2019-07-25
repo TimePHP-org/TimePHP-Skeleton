@@ -1,9 +1,18 @@
 {
-  "autoload": {
-    "psr-4": {
-        "App\\": "App/models/",
-        "App\\Repository\\": "App/models/Repository/",
-        "App\\Users\\": "App/models/Users/"
+    "name": "mranyx/skeleton-mvc-composer",
+    "description": "Project stucture to start a php project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MrAnyx",
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4": {
+          "App\\": "App/models/",
+          "App\\Repository\\": "App/models/Repository/",
+          "App\\Users\\": "App/models/Users/"
+      }
     }
-  }
 }
