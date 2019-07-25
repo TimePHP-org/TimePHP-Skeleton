@@ -2,9 +2,11 @@
     "name": "mranyx/skeleton-mvc-composer",
     "description": "Simple project stucture to start a php project",
     "license": "MIT",
+    "keywords": ["template", "mvc", "composer", "php", "autoload"],
     "authors": [
         {
-            "name": "MrAnyx"
+            "name": "MrAnyx",
+            "role": "Developer"
         }
     ],
     "require": {
