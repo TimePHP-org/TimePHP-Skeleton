@@ -1,8 +1,10 @@
 {
-    "name": "mranyx/skeleton-mvc-composer",
+    "name": "mranyx/skeleton",
+    "type": "template",
     "description": "Simple project stucture to start a php project",
     "license": "MIT",
     "keywords": ["template", "mvc", "composer", "php", "autoload"],
+    "homepage": "https://github.com/MrAnyx/Skeleton-MVC-Composer",
     "authors": [
         {
             "name": "MrAnyx",
