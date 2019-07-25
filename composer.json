@@ -1,10 +1,10 @@
 {
     "name": "mranyx/skeleton-mvc-composer",
-    "description": "Project stucture to start a php project",
+    "description": "Simple project stucture to start a php project",
     "license": "MIT",
     "authors": [
         {
-            "name": "MrAnyx",
+            "name": "MrAnyx"
         }
     ],
     "require": {
