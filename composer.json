@@ -5,6 +5,7 @@
     "license": "MIT",
     "keywords": ["template", "mvc", "composer", "php", "autoload"],
     "homepage": "https://github.com/MrAnyx/Skeleton-MVC-Composer",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "MrAnyx",
