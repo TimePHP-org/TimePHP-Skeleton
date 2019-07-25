@@ -7,7 +7,9 @@
             "name": "MrAnyx",
         }
     ],
-    "require": {},
+    "require": {
+        "php": "^7.2",
+    },
     "autoload": {
       "psr-4": {
           "App\\": "App/models/",
