@@ -19,14 +19,28 @@ Using Composer create-project command
 
 # Project structure
  ```bash
+│   .gitignore
+│   README.md
+│   composer.json
+│   composer.lock
 ├───App
 │   ├───Controllers
 │   ├───Includes
+│   │       config.php
+│   │       functions.php
 │   ├───Models
-│   │   ├───Reposit
+│   │   ├───Repository
+│   │   │       Repository.php
 │   │   └───Users
+│   │           Users.php
+│   │           UsersRepository.php
 │   └───Views
+│       │   index.php
 │       └───Commons
+│               footer.php
+│               header.php
+│               navbar.php
 └───vendor
+    │   autoload.php
     └───composer
  ```
