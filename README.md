@@ -123,6 +123,11 @@ require __DIR__ . '/commons/header.php';
 And below this line, you will set the different variables that will be used in your webpage.
 You don't need to recreate the Repository object, it's already done in the ```header.php```file.
 
+
+# Future Features
+
+- Add php commands to create controllers, models, ... and automatically adding it to the ```composer.json``` file with the correct namespace.
+
 # Related content
 - [Packagist](https://packagist.org/packages/mranyx/skeleton) page.
 - [GitHub](https://github.com/MrAnyx/Skeleton-MVC-Composer) page.
