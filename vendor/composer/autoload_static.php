@@ -7,14 +7,23 @@ namespace Composer\Autoload;
 class ComposerStaticInit77144669abf0e5768e229f8ba837abaf
 {
     public static $prefixLengthsPsr4 = array (
+        's' => 
+        array (
+            'splitbrain\\phpcli\\' => 18,
+        ),
         'A' => 
         array (
             'App\\Users\\' => 10,
             'App\\Repository\\' => 15,
+            'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'splitbrain\\phpcli\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/splitbrain/php-cli/src',
+        ),
         'App\\Users\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App/models/Users',
@@ -22,6 +31,10 @@ class ComposerStaticInit77144669abf0e5768e229f8ba837abaf
         'App\\Repository\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App/models/Repository',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/models',
         ),
     );
 

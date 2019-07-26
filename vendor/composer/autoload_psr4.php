@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'splitbrain\\phpcli\\' => array($vendorDir . '/splitbrain/php-cli/src'),
     'App\\Users\\' => array($baseDir . '/App/models/Users'),
     'App\\Repository\\' => array($baseDir . '/App/models/Repository'),
+    'App\\' => array($baseDir . '/App/models'),
 );
