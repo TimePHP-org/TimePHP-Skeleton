@@ -11,12 +11,12 @@ In order to retrieve this folder, you have to go to the right folder using CMD, 
 Using Git command
 
 ```bash
-  $ git clone https://github.com/MrAnyx/Skeleton-MVC-Composer.git
+$ git clone https://github.com/MrAnyx/Skeleton-MVC-Composer.git
 ```
 
 Using Composer create-project command
 ```bash
- $ composer create-project mranyx/skeleton --prefer-dist name_of_the_project
+$ composer create-project mranyx/skeleton --prefer-dist name_of_the_project
 ```
 
 # Project structure
@@ -88,20 +88,20 @@ class Article{
 You have to add this new namespace to the composer.json file in the autoload section. In this example, you will have to add this line:
 
 ```json
-  "autoload": {
-      "psr-4": {
-          "App\\": "App/models/",
-          "App\\Repository\\": "App/models/Repository/",
-          "App\\Users\\": "App/models/Users/",
+"autoload": {
+    "psr-4": {
+        "App\\": "App/models/",
+        "App\\Repository\\": "App/models/Repository/",
+        "App\\Users\\": "App/models/Users/",
           
-          "App\\Articles\\": "App/models/Articles"
-      }
+        "App\\Articles\\": "App/models/Articles"
     }
+  }
 ```
 
 If your new classes are not detected by the autoloader, try this command and it should resolve the problem : 
 ```bash
- $ composer dump-autoload
+$ composer dump-autoload
 ```
 
 
