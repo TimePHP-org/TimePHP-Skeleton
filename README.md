@@ -11,7 +11,7 @@ In order to retrieve this folder, you have to go to the right folder using CMD, 
 Using Git command
 
 ```bash
-$ git clone https://github.com/MrAnyx/Skeleton-MVC-Composer.git
+$ git clone https://github.com/MrAnyx/Skeleton-MVC-Composer.git name_of_the_project
 ```
 
 Using Composer create-project command
@@ -104,6 +104,26 @@ If your new classes are not detected by the autoloader, try this command and it 
 $ composer dump-autoload
 ```
 
+## Controllers
+
+A controller is an object the regroup all the modelRepository function for a page. I recommend you to call your controllers with the name of the page like this : ```indexController.php```
+
+As the Models, you have to do the same manipulation with the namespace.
+
+A controller take an Repository object as a parameter. Thank's to this, it prevent the multiple connection and disconnection of the database.
+
+## Views
+
+A view is the file that willl be displayed to the user. At the very top of the file, your will have to require the header file like this : 
+```php
+<?php
+require __DIR__ . '/commons/header.php';
+```
+
+And below this line, you will set the different variables that will be used in your webpage.
+You don't need to recreate the Repository object, it's already done in the ```header.php```file.
 
 
-
+# FAQ
+If you have any question or advice, feel free to contact me.
+:computer: Happy Coding:heart:
