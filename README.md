@@ -55,11 +55,11 @@ Models are very importants in this structure. Basically, models are objects that
 For example, if you have a ```User```table that contains three fields : ```id```, ```name```, and ```age``` like this:
 
 <center>
-id|name|age
----|---|---
-1|"Robert"|42
-2|"John"|29
-3|"James"|38
+|id|name|age|
+|:---:|:---:|:---:|
+|1|"Robert"|42|
+|2|"John"|29|
+|3|"James"|38|
 </center>
 
 
