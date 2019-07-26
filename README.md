@@ -44,3 +44,9 @@ Using Composer create-project command
     │   autoload.php
     └───composer
  ```
+The most important parts of this project are :
+  - composer.json
+  - App/
+
+
+
