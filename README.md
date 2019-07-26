@@ -56,10 +56,10 @@ For example, if you have a ```User```table that contains three fields : ```id```
 
 
   |id|name|age|
-  |:---:|:---:|:---:|
+  |-|--------|--|
   |1|"Robert"|42|
-  |2|"John"|29|
-  |3|"James"|38|
+  |2| "John" |29|
+  |3| "James"|38|
   
 
 
