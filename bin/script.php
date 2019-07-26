@@ -93,15 +93,12 @@ class Script extends CLI
 
 
                 $this->info('Model successfully created'.PHP_EOL.PHP_EOL.$model.'.php file created here : App/models/'.$model.'/'.$model.'.php'.PHP_EOL.$model.'Repository.php file created here : App/models/'.$model.'/'.$model.'Repository.php');
+                //utiliser json_decode pour modifier le fichier compser.json
 
             }else{
                 $this->info('This model already exists');
             }
 
-
-
-            //utiliser json_decode pour modifier le fichier compser.json
-            //$this->info(var_dump($options->getArgs()));
         }else {
             echo $options->help();
         }
