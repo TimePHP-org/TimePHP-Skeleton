@@ -101,7 +101,7 @@ You have to add this new namespace to the composer.json file in the autoload sec
 
 If your new classes are not detected by the autoloader, try this command and it should resolve the problem : 
 ```bash
-  	composer dump-autoload
+ $ composer dump-autoload
 ```
 
 
