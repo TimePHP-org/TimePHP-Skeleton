@@ -77,12 +77,31 @@ You've created a new model here ```App/models/Articles/Article.php``` and ```App
 <?php
 namespace App\Articles;
 
-/*if you're using PDO*/
-use PDO; 
+use PDO; // if you're using PDO
 
 class Article{
-  // rest of your code
+  // attributes
+  // constructor
+  // getters & setters
 }
+```
+You have to add this new namespace to the composer.json file in the autoload section. In this example, you will have to add this line:
+
+```json
+  "autoload": {
+      "psr-4": {
+          "App\\": "App/models/",
+          "App\\Repository\\": "App/models/Repository/",
+          "App\\Users\\": "App/models/Users/",
+          
+          "App\\Articles\\": "App/models/Articles"
+      }
+    }
+```
+
+If your new classes are not detected by the autoloader, try this command and it should resolve the problem : 
+```bash
+  	composer dump-autoload
 ```
 
 
