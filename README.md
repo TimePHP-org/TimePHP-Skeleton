@@ -1,5 +1,6 @@
 # Skeleton-MVC-Composer
 A very simple skeleton to begin a website.
+To be honest, it's not a real MVC pattern but it's stiil very simple to use
 
 # Download
 First of all, you need to download [Composer](https://getcomposer.org/download/). If you are more comfortable, you can download [Git](https://git-scm.com/).
@@ -58,8 +59,8 @@ For example, if you have a ```User```table that contains three fields : ```id```
   |id|name|age|
   |-|--------|--|
   |1|"Robert"|42|
-  |2| "John" |29|
-  |3| "James"|38|
+  |2|"John"|29|
+  |3|"James"|38|
   
 
 
