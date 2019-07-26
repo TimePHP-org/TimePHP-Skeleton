@@ -127,4 +127,4 @@ You don't need to recreate the Repository object, it's already done in the ```he
 # FAQ
 If you have any question or advice, feel free to contact me.
 
-:computer: Happy Coding:heart:
+:computer: Happy Coding :heart:
