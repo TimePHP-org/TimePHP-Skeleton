@@ -75,9 +75,10 @@ You've created a new model here ```App/models/Articles/Article.php``` and ```App
 
 ```php
 <?php
-namespace App\Articles
+namespace App\Articles;
 
-use PDO //if you're using PDO
+/*if you're using PDO*/
+use PDO; 
 
 class Article{
   // rest of your code
