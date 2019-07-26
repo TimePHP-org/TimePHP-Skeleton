@@ -62,7 +62,28 @@ For example, if you have a ```User```table that contains three fields : ```id```
   |2|"John"|29|
   |3|"James"|38|
   
- Then, you will have to create a php object with ```id```, ```name```and ```àge``` attributes. If you want to see what it looks like, lok at the App/models/Users Model.
+You will have to create a php object (class) with ```id```, ```name```and ```àge``` attributes. If you want to see what it looks like,  you can look at the ```App/models/Users``` Model.
+
+You will also have to use the proper ```namespace```.
+
+I recommend you to organize each of your models in a folder that contains the model and ```modelRepository```. A modelRepository is an object that contains functions. Each functions have a precise role for example : get the last user, get the youngest user ... It's these classes that will request the database.
+
+### Namespaces
+A good approach is to name the namespace like this:
+
+You've created a new model here ```App/models/Articles/Article.php``` and ```App/models/Articles/ArticleRepository.php```. I recommend you to name the namespace like this:
+
+```php
+<?php
+namespace App\Articles
+
+use PDO //if you're using PDO
+
+class Article{
+  // rest of your code
+}
+```
+
 
 
 
