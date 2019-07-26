@@ -1,7 +1,7 @@
 # Skeleton-MVC-Composer
 A very simple skeleton to begin a website.
 
-To be honest, it's not a real MVC pattern but it's stiil very simple to use
+To be honest, it's not a real MVC pattern but it's stiil very simple to use. It's principally intended to beginners.
 
 # Download
 First of all, you need to download [Composer](https://getcomposer.org/download/). If you are more comfortable, you can download [Git](https://git-scm.com/).
