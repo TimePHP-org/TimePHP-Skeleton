@@ -48,5 +48,6 @@ The most important parts of this project are :
   - composer.json
   - App/
 
+The ```App/``` folder contains all you project
 
 
