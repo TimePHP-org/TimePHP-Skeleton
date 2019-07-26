@@ -123,6 +123,10 @@ require __DIR__ . '/commons/header.php';
 And below this line, you will set the different variables that will be used in your webpage.
 You don't need to recreate the Repository object, it's already done in the ```header.php```file.
 
+# Related content
+- [Packagist](https://packagist.org/packages/mranyx/skeleton) page.
+- [GitHub](https://github.com/MrAnyx/Skeleton-MVC-Composer) page.
+- [README](https://mranyx.github.io/Skeleton-MVC-Composer/) page.
 
 # FAQ
 If you have any question or advice, feel free to contact me.
