@@ -139,7 +139,7 @@ You will see the differents possibilities.
 
 # Future Features
 
-- Add php commands to create controllers, models, ... and automatically adding it to the ```composer.json``` file with the correct namespace.
+- Add php commands to create controllers, models, ... and automatically adding it to the ```composer.json``` file with the correct namespace.(Already available for models)
 
 # Related content
 - [Packagist](https://packagist.org/packages/mranyx/skeleton) page.
