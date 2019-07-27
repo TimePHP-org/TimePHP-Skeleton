@@ -10,7 +10,7 @@
         "php",
         "autoload"
     ],
-    "homepage": "https://github.com/MrAnyx/Skeleton-MVC-Composer",
+    "homepage": "https://github.com/MrAnyx/Skeleton-FlowPHP",
     "minimum-stability": "dev",
     "authors": [
         {
