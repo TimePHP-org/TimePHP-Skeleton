@@ -3,7 +3,13 @@
     "type": "project",
     "description": "Simple project stucture to start a php project",
     "license": "MIT",
-    "keywords": ["template", "mvc", "composer", "php", "autoload"],
+    "keywords": [
+        "template",
+        "mvc",
+        "composer",
+        "php",
+        "autoload"
+    ],
     "homepage": "https://github.com/MrAnyx/Skeleton-MVC-Composer",
     "minimum-stability": "dev",
     "authors": [
@@ -17,10 +23,10 @@
         "splitbrain/php-cli": "dev-master"
     },
     "autoload": {
-      "psr-4": {
-          "App\\": "App/models/",
-          "App\\Repository\\": "App/models/Repository/",
-          "App\\Users\\": "App/models/Users/"
-      }
+        "psr-4": {
+            "App\\": "App/models/",
+            "App\\Repository\\": "App/models/Repository/",
+            "App\\Users\\": "App/models/Users/"
+        }
     }
 }

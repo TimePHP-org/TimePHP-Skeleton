@@ -29,14 +29,16 @@ class Script extends CLI
     protected function main(Options $options)
     {
         if ($options->getOpt('model')) {
-
             $model = ucfirst(strtolower($options->getArgs()[0]));
 
-            if(!is_dir('App/models/'.$model)){
-                mkdir('App/models/'.$model, 0755, true);
+            $path = dirname(__DIR__).DIRECTORY_SEPARATOR.'App'.DIRECTORY_SEPARATOR.'models'.DIRECTORY_SEPARATOR;
+            $pathComposer = dirname(__DIR__).DIRECTORY_SEPARATOR;
+
+            if(!is_dir($path.$model)){
+                mkdir($path.$model, 0755, true);
 
                 //Model
-                $fp = fopen('App/models/'.$model.'/'.$model.'.php', 'w');
+                $fp = fopen($path.$model.DIRECTORY_SEPARATOR.$model.'.php', 'w');
                 $modelContent = implode(PHP_EOL, [
                     '<?php',
                     'namespace App\\'.$model.';',
@@ -67,7 +69,7 @@ class Script extends CLI
                 fclose($fp);
 
                 //ModelRepository
-                $fp = fopen('App/models/'.$model.'/'.$model.'Repository.php', 'w');
+                $fp = fopen($path.$model.DIRECTORY_SEPARATOR.$model.'Repository.php', 'w');
                 $modelRepoContent = implode(PHP_EOL, [
                     '<?php',
                     'namespace App\\'.$model.';',
@@ -92,8 +94,23 @@ class Script extends CLI
                 fclose($fp);
 
 
-                $this->info('Model successfully created'.PHP_EOL.PHP_EOL.$model.'.php file created here : App/models/'.$model.'/'.$model.'.php'.PHP_EOL.$model.'Repository.php file created here : App/models/'.$model.'/'.$model.'Repository.php');
+
                 //utiliser json_decode pour modifier le fichier compser.json
+                $fileJson = file_get_contents($pathComposer.'composer.json');
+                $composerJson = json_decode($fileJson, true);
+                $composerJson["autoload"]["psr-4"]["App\\".$model.'\\'] = 'App/models/'.$model.'/';
+
+
+                $fp = fopen($pathComposer.'composer.json', 'w');
+                fwrite($fp, str_replace('\/', '/', json_encode($composerJson, JSON_PRETTY_PRINT)));
+                fclose($fp);
+
+
+
+                // echo json_encode($composerJson, JSON_PRETTY_PRINT);
+
+
+                $this->info('Model successfully created'.PHP_EOL.PHP_EOL.$model.'.php file created here : App/models/'.$model.'/'.$model.'.php'.PHP_EOL.$model.'Repository.php file created here : App/models/'.$model.'/'.$model.'Repository.php');
 
             }else{
                 $this->info('This model already exists');
