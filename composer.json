@@ -1,5 +1,5 @@
 {
-    "name": "flowphp/skeleton",
+    "name": "timephp/skeleton",
     "type": "project",
     "description": "Simple project stucture to start a php project",
     "license": "MIT",
@@ -10,7 +10,7 @@
         "php",
         "autoload"
     ],
-    "homepage": "https://github.com/MrAnyx/Skeleton-FlowPHP",
+    "homepage": "https://github.com/MrAnyx/Skeleton-TimePHP",
     "minimum-stability": "dev",
     "authors": [
         {
