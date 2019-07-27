@@ -51,9 +51,9 @@ $ composer create-project mranyx/skeleton --prefer-dist name_of_the_project
      └─script.php
  ```
 The most important parts of this project are :
-* composer.json
-* App/
-* bin/script.php
+ * composer.json
+ * App/
+ * bin/script.php
 
 The ```App/``` folder contains all you project
 
@@ -137,12 +137,12 @@ $ php bin/script.php
 You will see the differents possibilities.
 
 ## Future Features
-* Add php commands to create controllers, models, ... and automatically adding it to the ```composer.json``` file with the correct namespace.(Already available for models)
+ * Add php commands to create controllers, models, ... and automatically adding it to the ```composer.json``` file with the correct namespace.(Already available for models)
 
 ## Related content
-* [Packagist](https://packagist.org/packages/mranyx/skeleton) page.
-* [GitHub](https://github.com/MrAnyx/Skeleton-MVC-Composer) page.
-* [README](https://mranyx.github.io/Skeleton-MVC-Composer/) page.
+ * [Packagist](https://packagist.org/packages/mranyx/skeleton) page.
+ * [GitHub](https://github.com/MrAnyx/Skeleton-MVC-Composer) page.
+ * [README](https://mranyx.github.io/Skeleton-MVC-Composer/) page.
 
 ## FAQ
 If you have any question or advice, feel free to contact me.
