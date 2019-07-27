@@ -61,11 +61,11 @@ The ```App/``` folder contains all you project
 Models are very importants in this structure. Basically, models are objects that represent the differents tables in your database.
 For example, if you have a ```User```table that contains three fields : ```id```, ```name```, and ```age``` like this:
 
-|id|name    |age|
-|--|--------|---|
-|1 |"Robert"|42 |
-|2 |"John"  |29 |
-|3 |"James" |38 |
+|id|name|age|
+|:---:|:---:|:----:|
+|1|"Robert"|42|
+|2|"John"|29|
+|3|"James"|38|
   
 You will have to create a php object (class) with ```id```, ```name```and ```àge``` attributes. If you want to see what it looks like,  you can look at the ```App/models/Users``` Model.
 
