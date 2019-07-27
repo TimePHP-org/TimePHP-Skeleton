@@ -38,7 +38,7 @@ class Script extends CLI
                 mkdir($path.$model, 0755, true);
 
                 //Model
-                $fp = fopen($path.$model.DIRECTORY_SEPARATOR.$model.'.php', 'w');
+                $fichier = fopen($path.$model.DIRECTORY_SEPARATOR.$model.'.php', 'w');
                 $modelContent = implode(PHP_EOL, [
                     '<?php',
                     'namespace App\\'.$model.';',
@@ -65,11 +65,11 @@ class Script extends CLI
                     '   //Getters and Setters',
                     '}',
                 ]);
-                fwrite($fp, $modelContent);
-                fclose($fp);
+                fwrite($fichier, $modelContent);
+                fclose($fichier);
 
                 //ModelRepository
-                $fp = fopen($path.$model.DIRECTORY_SEPARATOR.$model.'Repository.php', 'w');
+                $fichier = fopen($path.$model.DIRECTORY_SEPARATOR.$model.'Repository.php', 'w');
                 $modelRepoContent = implode(PHP_EOL, [
                     '<?php',
                     'namespace App\\'.$model.';',
@@ -90,8 +90,8 @@ class Script extends CLI
                     '',
                     '}',
                 ]);
-                fwrite($fp, $modelRepoContent);
-                fclose($fp);
+                fwrite($fichier, $modelRepoContent);
+                fclose($fichier);
 
 
 
@@ -101,9 +101,9 @@ class Script extends CLI
                 $composerJson["autoload"]["psr-4"]["App\\".$model.'\\'] = 'App/models/'.$model.'/';
 
 
-                $fp = fopen($pathComposer.'composer.json', 'w');
-                fwrite($fp, str_replace('\/', '/', json_encode($composerJson, JSON_PRETTY_PRINT)));
-                fclose($fp);
+                $fichier = fopen($pathComposer.'composer.json', 'w');
+                fwrite($fichier, str_replace('\/', '/', json_encode($composerJson, JSON_PRETTY_PRINT)));
+                fclose($fichier);
 
 
 
