@@ -2,7 +2,7 @@
 
 TimePHP is a very simple skeleton to begin a website.
 
-To be honest, it's not a real MVC pattern but it's stiil very simple to use. It's principally intended to beginners.
+To be honest, it's not a real MVC pattern but it's still very simple to use. It's principally intended to beginners.
 
 ## Download
 First of all, you need to download [Composer](https://getcomposer.org/download/). If you are more comfortable, you can download [Git](https://git-scm.com/).
@@ -12,7 +12,7 @@ In order to retrieve this folder, you have to go to the right folder using CMD, 
 Using Git command
 
 ```bash
-$ git clone https://github.com/MrAnyx/Skeleton-TimePHP.git name_of_the_project 
+$ git clone https://github.com/MrAnyx/Skeleton-TimePHP.git name_of_the_project
 ```
 
 Using Composer create-project command
@@ -67,7 +67,7 @@ For example, if you have a ```User```table that contains three fields : ```id```
 |1 |"Robert"|42 |
 |2 | "John" |29 |
 |3 |"James" |38 |
-  
+
 You will have to create a php object (class) with ```id```, ```name```and ```àge``` attributes. If you want to see what it looks like,  you can look at the ```App/models/Users``` Model.
 
 You will also have to use the proper ```namespace```.
@@ -99,13 +99,13 @@ You have to add this new namespace to the composer.json file in the autoload sec
         "App\\": "App/models/",
         "App\\Repository\\": "App/models/Repository/",
         "App\\Users\\": "App/models/Users/",
-          
+
         "App\\Articles\\": "App/models/Articles"
     }
   }
 ```
 
-If your new classes are not detected by the autoloader, try this command and it should resolve the problem : 
+If your new classes are not detected by the autoloader, try this command and it should resolve the problem :
 ```bash
 $ composer dump-autoload
 ```
@@ -120,7 +120,7 @@ A controller take an Repository object as a parameter. Thank's to this, it preve
 
 ### Views
 
-A view is the file that willl be displayed to the user. At the very top of the file, your will have to require the header file like this : 
+A view is the file that willl be displayed to the user. At the very top of the file, your will have to require the header file like this :
 ```php
 <?php
 require __DIR__ . '/commons/header.php';
