@@ -1,8 +1,8 @@
 <?php
 
 // requires
-require __DIR__ . '/../../../vendor/autoload.php';
-require __DIR__ . '/../../includes/config.php';
+require_once __DIR__ . '/../../../vendor/autoload.php';
+require_once __DIR__ . '/../../includes/config.php';
 
 // uses
 use App\Repository\Repository;

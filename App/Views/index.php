@@ -1,6 +1,6 @@
 <?php
-require __DIR__ . '/commons/header.php';
-require __DIR__ . '/commons/navbar.php';
+require_once __DIR__ . '/commons/header.php';
+require_once __DIR__ . '/commons/navbar.php';
 
 
 use App\Users\Users;
@@ -18,5 +18,5 @@ print_r($usersRepository->getLastThreeUsers()); // fetch the last three values
 
 
 <?php
-require __DIR__ . '/commons/footer.php';
+require_once __DIR__ . '/commons/footer.php';
 ?>
