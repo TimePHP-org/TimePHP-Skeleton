@@ -22,29 +22,33 @@ $ composer create-project mranyx/skeleton --prefer-dist name_of_the_project
 # Project structure
  ```bash
 │   .gitignore
-│   README.md
+│   LICENSE
 │   composer.json
 │   composer.lock
+│   README.md
 ├───App
-│   ├───Controllers
-│   ├───Includes
+│   ├───includes
 │   │       config.php
 │   │       functions.php
-│   ├───Models
-│   │   ├───Repository
-│   │   │       Repository.php
-│   │   └───Users
-│   │           Users.php
-│   │           UsersRepository.php
-│   └───Views
+│   ├───models
+│   │   ├───Users
+│   │   │       Users.php
+│   │   │       UsersRepository.php
+│   │   └───Repository
+│   │           Repository.php
+│   ├───controllers
+│   └───views
 │       │   index.php
-│       └───Commons
+│       └───commons
 │               footer.php
 │               header.php
 │               navbar.php
-└───vendor
-    │   autoload.php
-    └───composer
+├───vendor
+│   │   autoload.php
+│   ├───composer
+│   └───splitbrain
+└───bin
+        script.php
  ```
 The most important parts of this project are :
   - composer.json
