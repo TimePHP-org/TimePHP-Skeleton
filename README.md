@@ -48,7 +48,7 @@ $ composer create-project mranyx/skeleton --prefer-dist name_of_the_project
 │   ├───composer
 │   └───splitbrain
 └───bin
-        script.php
+     └─script.php
  ```
 The most important parts of this project are :
   - composer.json
