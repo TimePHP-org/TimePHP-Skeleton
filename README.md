@@ -1,7 +1,5 @@
 # Skeleton-MVC-Composer
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8c1fa271ecec4435ae56429ef33d7754)](https://app.codacy.com/app/1ptitigre/Skeleton-MVC-Composer?utm_source=github.com&utm_low=referral&utm_content=MrAnyx/Skeleton-MVC-Composer&utm_campaign=Badge_Grade_Dashboard)
-
 A very simple skeleton to begin a website.
 
 To be honest, it's not a real MVC pattern but it's stiil very simple to use. It's principally intended to beginners.
