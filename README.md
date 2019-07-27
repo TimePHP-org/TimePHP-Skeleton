@@ -128,7 +128,6 @@ require __DIR__ . '/commons/header.php';
 And below this line, you will set the different variables that will be used in your webpage.
 You don't need to recreate the Repository object, it's already done in the ```header.php```file.
 
-
 ## Script
 
 In order to create controllers, models and views more easily, the php-cli library was made for it. To execute the script just execute the following command :
@@ -139,12 +138,12 @@ You will see the differents possibilities.
 
 ## Future Features
 
-- Add php commands to create controllers, models, ... and automatically adding it to the ```composer.json``` file with the correct namespace.(Already available for models)
+  - Add php commands to create controllers, models, ... and automatically adding it to the ```composer.json``` file with the correct namespace.(Already available for models)
 
 ## Related content
-- [Packagist](https://packagist.org/packages/mranyx/skeleton) page.
-- [GitHub](https://github.com/MrAnyx/Skeleton-MVC-Composer) page.
-- [README](https://mranyx.github.io/Skeleton-MVC-Composer/) page.
+  - [Packagist](https://packagist.org/packages/mranyx/skeleton) page.
+  - [GitHub](https://github.com/MrAnyx/Skeleton-MVC-Composer) page.
+  - [README](https://mranyx.github.io/Skeleton-MVC-Composer/) page.
 
 ## FAQ
 If you have any question or advice, feel free to contact me.
