@@ -12,12 +12,12 @@ In order to retrieve this folder, you have to go to the right folder using CMD, 
 Using Git command
 
 ```bash
-$ git clone https://github.com/MrAnyx/Skeleton-MVC-Composer.git name_of_the_project 
+$ git clone https://github.com/MrAnyx/Skeleton-TimePHP.git name_of_the_project 
 ```
 
 Using Composer create-project command
 ```bash
-$ composer create-project mranyx/skeleton --prefer-dist name_of_the_project
+$ composer create-project timephp/skeleton --prefer-dist name_of_the_project
 ```
 
 ## Project structure
@@ -141,9 +141,9 @@ You will see the differents possibilities.
 * Add php commands to create controllers, models, ... and automatically adding it to the ```composer.json``` file with the correct namespace.(Already available for models)
 
 ## Related content
-* [Packagist](https://packagist.org/packages/flowphp/skeleton) page.
-* [GitHub](https://github.com/MrAnyx/Skeleton-FlowPHP) page.
-* [README](https://mranyx.github.io/Skeleton-FlowPHP/) page.
+* [Packagist](https://packagist.org/packages/timephp/skeleton) page.
+* [GitHub](https://github.com/MrAnyx/Skeleton-TimePHP) page.
+* [README](https://mranyx.github.io/Skeleton-TimePHP/) page.
 
 ## FAQ
 If you have any question or advice, feel free to contact me.
