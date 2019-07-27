@@ -12,7 +12,7 @@ In order to retrieve this folder, you have to go to the right folder using CMD, 
 Using Git command
 
 ```bash
-$ git clone https://github.com/MrAnyx/Skeleton-MVC-Composer.git name_of_the_project
+$ git clone https://github.com/MrAnyx/Skeleton-MVC-Composer.git name_of_the_project 
 ```
 
 Using Composer create-project command
