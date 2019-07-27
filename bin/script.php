@@ -10,8 +10,6 @@ class Script extends CLI
     // register options and arguments
     protected function setup(Options $options)
     {
-        $options->setHelp('php bin/script.php [option] [argument]');
-
 
         // options
         $options->registerOption('controller', 'Create a controller followed by <name-controller>', 'c');
@@ -117,7 +115,7 @@ class Script extends CLI
             }
 
         }else {
-            echo $options->help();
+            $this->info($options->help());
         }
     }
 }
