@@ -53,6 +53,7 @@ $ composer create-project mranyx/skeleton --prefer-dist name_of_the_project
 The most important parts of this project are :
   - composer.json
   - App/
+  - bin/script.php
 
 The ```App/``` folder contains all you project
 
