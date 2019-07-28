@@ -29,6 +29,7 @@ class Script extends CLI
         if ($options->getOpt('model')) {
             $model = ucfirst(strtolower($options->getArgs()[0]));
 
+            $pathTemplate = dirname(__DIR__).DIRECTORY_SEPARATOR.'bin'.DIRECTORY_SEPARATOR.'templates'.DIRECTORY_SEPARATOR;
             $path = dirname(__DIR__).DIRECTORY_SEPARATOR.'App'.DIRECTORY_SEPARATOR.'models'.DIRECTORY_SEPARATOR;
             $pathComposer = dirname(__DIR__).DIRECTORY_SEPARATOR;
 
@@ -37,76 +38,25 @@ class Script extends CLI
 
                 //Model
                 $fichier = fopen($path.$model.DIRECTORY_SEPARATOR.$model.'.php', 'w');
-                $modelContent = implode(PHP_EOL, [
-                    '<?php',
-                    'namespace App\\'.$model.';',
-                    '',
-                    'class '.$model.' {',
-                    '',
-                    '   //Put the different attributes here as private attributes',
-                    '',
-                    '   public function __construct(array $arrayOfValues = null){',
-                    '       if($arrayOfValues != null){',
-                    '           $this->hydrate($arrayOfValues);',
-                    '       }',
-                    '   }',
-                    '',
-                    '   public function hydrate(array $donnees){',
-                    '       foreach($donnees as $key => $value){,',
-                    '           $method = "set".ucfirst($key);',
-                    '           if(method_exists($this,$method)){',
-                    '               $this->$method($value);',
-                    '           }',
-                    '       }',
-                    '   }',
-                    '',
-                    '   //Getters and Setters',
-                    '}',
-                ]);
+                $modelContent = file_get_contents($pathTemplate.'templateModel.php');
+                $modelContent = str_replace("TemplateModel" ,$model, $modelContent);
                 fwrite($fichier, $modelContent);
                 fclose($fichier);
 
                 //ModelRepository
                 $fichier = fopen($path.$model.DIRECTORY_SEPARATOR.$model.'Repository.php', 'w');
-                $modelRepoContent = implode(PHP_EOL, [
-                    '<?php',
-                    'namespace App\\'.$model.';',
-                    '',
-                    'use PDO;',
-                    'use App\\'.$model.'\\'.$model.';',
-                    'use App\\Repository\\Repository;',
-                    '',
-                    'class '.$model.'Repository {',
-                    '',
-                    '   private $db;',
-                    '',
-                    '   public function __construct(Repository $db){',
-                    '       $this->db = $db;',
-                    '   }',
-                    '',
-                    '   //Put the different functions here as public functions',
-                    '',
-                    '}',
-                ]);
+                $modelRepoContent = file_get_contents($pathTemplate.'templateModelRepository.php');
+                $modelRepoContent = str_replace("TemplateModel", $model, $modelRepoContent);
                 fwrite($fichier, $modelRepoContent);
                 fclose($fichier);
-
-
 
                 //utiliser json_decode pour modifier le fichier compser.json
                 $fileJson = file_get_contents($pathComposer.'composer.json');
                 $composerJson = json_decode($fileJson, true);
                 $composerJson["autoload"]["psr-4"]["App\\".$model.'\\'] = 'App/models/'.$model.'/';
-
-
                 $fichier = fopen($pathComposer.'composer.json', 'w');
                 fwrite($fichier, str_replace('\/', '/', json_encode($composerJson, JSON_PRETTY_PRINT)));
                 fclose($fichier);
-
-
-
-                // echo json_encode($composerJson, JSON_PRETTY_PRINT);
-
 
                 $this->info('Model successfully created'.PHP_EOL.PHP_EOL.$model.'.php file created here : App/models/'.$model.'/'.$model.'.php'.PHP_EOL.$model.'Repository.php file created here : App/models/'.$model.'/'.$model.'Repository.php');
 

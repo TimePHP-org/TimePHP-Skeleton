@@ -1,6 +1,4 @@
 <?php
-
-
 /*
 This class represent an object called Users
 In order to create an this object, write:
