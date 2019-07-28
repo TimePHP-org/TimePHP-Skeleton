@@ -29,7 +29,7 @@ class Script extends CLI
         if ($options->getOpt('model')) {
             $model = ucfirst(strtolower($options->getArgs()[0]));
 
-            $pathTemplate = dirname(__DIR__).DIRECTORY_SEPARATOR.'bin'.DIRECTORY_SEPARATOR.'templates'.DIRECTORY_SEPARATOR;
+            $pathTemplate = dirname(__DIR__).DIRECTORY_SEPARATOR.'bin'.DIRECTORY_SEPARATOR.'templates'.DIRECTORY_SEPARATOR.'models'.DIRECTORY_SEPARATOR;
             $path = dirname(__DIR__).DIRECTORY_SEPARATOR.'App'.DIRECTORY_SEPARATOR.'models'.DIRECTORY_SEPARATOR;
             $pathComposer = dirname(__DIR__).DIRECTORY_SEPARATOR;
 

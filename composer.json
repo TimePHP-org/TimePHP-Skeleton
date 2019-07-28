@@ -26,8 +26,7 @@
         "psr-4": {
             "App\\": "App/models/",
             "App\\Repository\\": "App/models/Repository/",
-            "App\\Users\\": "App/models/Users/",
-            "App\\Test\\": "App/models/Test/"
+            "App\\Users\\": "App/models/Users/"
         }
     }
 }
