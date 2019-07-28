@@ -9,5 +9,6 @@ return array(
     'splitbrain\\phpcli\\' => array($vendorDir . '/splitbrain/php-cli/src'),
     'App\\Users\\' => array($baseDir . '/App/models/Users'),
     'App\\Repository\\' => array($baseDir . '/App/models/Repository'),
+    'App\\Index\\' => array($baseDir . '/App/controllers/Index'),
     'App\\' => array($baseDir . '/App/models'),
 );

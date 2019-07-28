@@ -15,6 +15,7 @@ class ComposerStaticInit77144669abf0e5768e229f8ba837abaf
         array (
             'App\\Users\\' => 10,
             'App\\Repository\\' => 15,
+            'App\\Index\\' => 10,
             'App\\' => 4,
         ),
     );
@@ -31,6 +32,10 @@ class ComposerStaticInit77144669abf0e5768e229f8ba837abaf
         'App\\Repository\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App/models/Repository',
+        ),
+        'App\\Index\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/controllers/Index',
         ),
         'App\\' => 
         array (

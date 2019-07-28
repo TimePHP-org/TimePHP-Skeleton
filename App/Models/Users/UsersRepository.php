@@ -25,7 +25,7 @@ class UsersRepository{
     }
 
     public function createTable(){
-        $response = $this->db->query("CREATE TABLE users (
+        $response = $this->db->query("CREATE TABLE IF NOT EXISTS users (
             id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             name VARCHAR(30),
             age int(3)
