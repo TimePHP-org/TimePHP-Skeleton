@@ -9,6 +9,7 @@ use App\Repository\Repository;
 
 // global variables
 $db = Repository::connect($config);
+
 ?>
 
 <!DOCTYPE html>

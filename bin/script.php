@@ -16,7 +16,7 @@ class Script extends CLI
         $options->registerOption('model', 'Create a model followed by <name-model>', 'm');
         $options->registerOption('view', 'Create a view followed by <name-view>', 'v');
 
-
+        
         // arguments
         $options->registerArgument('argument', 'Name of the Model / Controller / View');
 
