@@ -92,6 +92,27 @@ class Script extends CLI
 
             }else{
                 $this->info('This controller already exists');
+
+            }
+        }else if ($options->getOpt('view')) {
+            $view = $options->getArgs()[0];
+
+            $pathTemplate = dirname(__DIR__).DIRECTORY_SEPARATOR.'bin'.DIRECTORY_SEPARATOR.'templates'.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR;
+            $path = dirname(__DIR__).DIRECTORY_SEPARATOR.'App'.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR;
+
+            if(!file_exists($path.$view.'.php')){
+
+                // View
+                $fichier = fopen($path.$view.'.php', 'w');
+                $viewContent = file_get_contents($pathTemplate.'templateView.php');
+                $viewContent = str_replace("TemplateView" ,$view, $viewContent);
+                fwrite($fichier, $viewContent);
+                fclose($fichier);
+
+                $this->info('View successfully created'.PHP_EOL.PHP_EOL.$view.'.php file created here : App/views/'.$view.'.php');
+
+            }else{
+                $this->info('This view already exists');
             }
 
         }else {
