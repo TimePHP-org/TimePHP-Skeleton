@@ -137,6 +137,8 @@ $ php bin/script.php
 ```
 You will see the differents possibilities.
 
+<h1 id="example">Example</h1>
+
 ## Future Features
 * Add php commands to create controllers, models, ... and automatically adding it to the ```composer.json``` file with the correct namespace.(Already available for models)
 
