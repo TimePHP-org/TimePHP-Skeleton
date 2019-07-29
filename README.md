@@ -4,7 +4,7 @@ TimePHP is a very simple skeleton to rapidly begin a website.
 
 To be honest, it's not a real MVC pattern but it's still very simple to use. It's principally intended to beginners.
 
-If you want to see an example of you to use this framework, click [here](READMD.md#example).
+If you want to see an example of you to use this framework, click [here](README.md#example).
 
 ## Download
 First of all, you need to download [Composer](https://getcomposer.org/download/). If you are more comfortable, you can download [Git](https://git-scm.com/).
