@@ -132,18 +132,17 @@ And below this line, you will set the different variables that will be used in y
 You don't need to recreate the Repository object, it's already done in the ```header.php```file.
 
 ## Script
-
 In order to create controllers, models and views more easily, the php-cli library was made for it. To execute the script just execute the following command :
 ```bash
 $ php bin/script.php
 ```
 You will see the differents possibilities.
 
-<h1 id="example">Example</h1>
+<h2 id="example">Example</h2>
 In this example, we will see how to use this framework using the different features.
 
 ## Future Features
-* Add php commands to create controllers, models, ... and automatically adding it to the ```composer.json``` file with the correct namespace.(Already available for models)
+* Example to explaine how to use this framework properly.
 
 ## Related content
 * [Packagist](https://packagist.org/packages/timephp/skeleton) page.
