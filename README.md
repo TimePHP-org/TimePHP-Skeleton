@@ -1,5 +1,6 @@
 # Skeleton-TimePHP
 
+
 TimePHP is a very simple skeleton to rapidly begin a website.
 
 To be honest, it's not a real MVC pattern but it's still very simple to use. It's principally intended to beginners.
