@@ -1,5 +1,4 @@
-# Skeleton-TimePHP
-
+# Skeleton-TimePHP (not up to date)
 
 TimePHP is a very simple skeleton to rapidly begin a website.
 
