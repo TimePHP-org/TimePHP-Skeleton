@@ -6,9 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'splitbrain\\phpcli\\' => array($vendorDir . '/splitbrain/php-cli/src'),
-    'App\\Users\\' => array($baseDir . '/App/models/Users'),
-    'App\\Repository\\' => array($baseDir . '/App/models/Repository'),
-    'App\\Index\\' => array($baseDir . '/App/controllers/Index'),
-    'App\\' => array($baseDir . '/App/models'),
+    'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
+    'Twig\\' => array($vendorDir . '/twig/twig/src'),
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
+    'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'MongoDB\\' => array($vendorDir . '/mongodb/mongodb/src'),
 );

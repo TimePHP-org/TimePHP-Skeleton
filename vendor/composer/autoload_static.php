@@ -4,50 +4,81 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit77144669abf0e5768e229f8ba837abaf
+class ComposerStaticInit3e28f6aa7e2ff01fe38837468ec29dcc
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '3a37ebac017bc098e9a86b35401e7a68' => __DIR__ . '/..' . '/mongodb/mongodb/src/functions.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
-        's' => 
+        'W' => 
         array (
-            'splitbrain\\phpcli\\' => 18,
+            'Whoops\\' => 7,
         ),
-        'A' => 
+        'T' => 
         array (
-            'App\\Users\\' => 10,
-            'App\\Repository\\' => 15,
-            'App\\Index\\' => 10,
-            'App\\' => 4,
+            'Twig\\' => 5,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Component\\VarDumper\\' => 28,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
+        'M' => 
+        array (
+            'MongoDB\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'splitbrain\\phpcli\\' => 
+        'Whoops\\' => 
         array (
-            0 => __DIR__ . '/..' . '/splitbrain/php-cli/src',
+            0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
         ),
-        'App\\Users\\' => 
+        'Twig\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/App/models/Users',
+            0 => __DIR__ . '/..' . '/twig/twig/src',
         ),
-        'App\\Repository\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/App/models/Repository',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'App\\Index\\' => 
+        'Symfony\\Polyfill\\Ctype\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/App/controllers/Index',
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-        'App\\' => 
+        'Symfony\\Component\\VarDumper\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/App/models',
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'MongoDB\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mongodb/mongodb/src',
+        ),
+    );
+
+    public static $classMap = array (
+        'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit77144669abf0e5768e229f8ba837abaf::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit77144669abf0e5768e229f8ba837abaf::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3e28f6aa7e2ff01fe38837468ec29dcc::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3e28f6aa7e2ff01fe38837468ec29dcc::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit3e28f6aa7e2ff01fe38837468ec29dcc::$classMap;
 
         }, null, ClassLoader::class);
     }
