@@ -3,5 +3,9 @@
 {% block title %}{{ parent() }}{% endblock %}
 
 {% block body %}
-<p>test</p>
+
+{% for el in result %}
+    <li>{{ el.name }} -- {{ el.age }} -- {{ el.height }}</li>
+{% endfor %}
+
 {% endblock %}

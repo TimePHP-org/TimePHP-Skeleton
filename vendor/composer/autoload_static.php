@@ -21,6 +21,7 @@ class ComposerStaticInit3e28f6aa7e2ff01fe38837468ec29dcc
         'T' => 
         array (
             'Twig\\' => 5,
+            'TimePHP\\' => 8,
         ),
         'S' => 
         array (
@@ -46,6 +47,10 @@ class ComposerStaticInit3e28f6aa7e2ff01fe38837468ec29dcc
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'TimePHP\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (

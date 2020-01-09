@@ -7,5 +7,10 @@
         "symfony/var-dumper": "^5.0",
         "altorouter/altorouter": "^2.0",
         "filp/whoops": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "TimePHP\\": "App/"
+        }
     }
 }

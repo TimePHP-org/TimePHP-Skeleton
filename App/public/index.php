@@ -2,33 +2,11 @@
 
 require __DIR__ . "/../../vendor/autoload.php";
 
-use Whoops\Run;
-use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
-use Whoops\Handler\PrettyPageHandler;
+use TimePHP\Foundation\Router;
 
-// Whoops error handler
-$whoops = new Run;
-$whoops->pushHandler(new PrettyPageHandler);
-$whoops->register();
+$router = new Router();
 
-// Twig
-$loader = new FilesystemLoader(__DIR__ . '/../views');
-$twig = new Environment($loader);
+$router->get("/", "HomeController#getData", "home");
 
-// Altorouter
-$router = new AltoRouter();
+$router->run();
 
-// Router
-$router->map("GET", "/", function() use($twig){
-    echo $twig->render("home.twig", ["name" => "Michel"]);
-}, "home");
-$match = $router->match();
-
-// start the router and handle errors
-if ($match && is_callable($match['target'])) {
-    call_user_func_array($match['target'], $match['params']);
-} else {
-    //header($_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
-    header("Location: ".$router->generate("home")); //redirection vers la page d'accueil
-}
