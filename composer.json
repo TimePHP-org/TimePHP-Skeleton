@@ -6,11 +6,13 @@
         "twig/twig": "^3.0",
         "symfony/var-dumper": "^5.0",
         "altorouter/altorouter": "^2.0",
-        "filp/whoops": "^2.7"
+        "filp/whoops": "^2.7",
+        "cocur/slugify": "^4.0"
     },
     "autoload": {
         "psr-4": {
             "TimePHP\\": "App/"
-        }
+        },
+        "files": ["App/Foundation/functions.php"]
     }
 }

@@ -4,8 +4,11 @@
 
 {% block body %}
 
-{% for el in result %}
-    <li>{{ el.name }} -- {{ el.age }} -- {{ el.height }}</li>
+{% for user in users %}
+    <li>
+        {# essayer d'utiliser le $router->generate("nom_page") #}
+        <a href="/user/{{ user.id }}">{{ user.prenom }} {{ user.nom }}</a>
+    </li>
 {% endfor %}
 
 {% endblock %}

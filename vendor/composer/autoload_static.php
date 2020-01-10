@@ -11,6 +11,7 @@ class ComposerStaticInit3e28f6aa7e2ff01fe38837468ec29dcc
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '3a37ebac017bc098e9a86b35401e7a68' => __DIR__ . '/..' . '/mongodb/mongodb/src/functions.php',
+        '981f541604a9a43ea7d04596b93e9534' => __DIR__ . '/../..' . '/App/Foundation/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -36,6 +37,10 @@ class ComposerStaticInit3e28f6aa7e2ff01fe38837468ec29dcc
         'M' => 
         array (
             'MongoDB\\' => 8,
+        ),
+        'C' => 
+        array (
+            'Cocur\\Slugify\\' => 14,
         ),
     );
 
@@ -71,6 +76,10 @@ class ComposerStaticInit3e28f6aa7e2ff01fe38837468ec29dcc
         'MongoDB\\' => 
         array (
             0 => __DIR__ . '/..' . '/mongodb/mongodb/src',
+        ),
+        'Cocur\\Slugify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cocur/slugify/src',
         ),
     );
 

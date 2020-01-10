@@ -2,26 +2,30 @@
 
 namespace TimePHP\Bundle\Controllers;
 
-use MongoDB\Client;
-use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
-use TimePHP\Foundation\Controller;
+use TimePHP\Foundation\Controller; 
+use PDO;
 
 class HomeController extends Controller{
 
+    public function getUsers(){
 
-    /**
-     * @return Twig
-     */
-    public function getData(){
+        dd(slugify("Bonjoué' 452 ùsjk je èta", "-"));
 
-        $client = new Client("mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=false");
+        $result = $this->client->query("SELECT * FROM User");
+        echo $this->twig->render("home.twig", ["users" => $result]);
+    }
 
-        $db = $client->dbTest;
-        $table = $db->test;
-    
-        $result = $table->find([], ["limit" => 10]);
-        echo $this->twig->render("home.twig", ["result" => $result]);
+    public function getArticleByUser($idUser){
+        $result = $this->client->prepare("SELECT * FROM Article WHERE id_User =  ?");
+        $result->bindValue(1, strVal($idUser), PDO::PARAM_INT);
+        $result->execute();
+        echo $this->twig->render("articles.twig", ["articles" => $result]);
+    }
 
+    public function getFullArticle($idUser, $idArticle){
+        $result = $this->client->prepare("SELECT * FROM Article WHERE id =  ?");
+        $result->bindValue(1, strVal($idArticle), PDO::PARAM_INT);
+        $result->execute();
+        echo $this->twig->render("articleFull.twig", ["article" => $result]);
     }
 }
