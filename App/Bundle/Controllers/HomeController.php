@@ -8,9 +8,6 @@ use PDO;
 class HomeController extends Controller{
 
     public function getUsers(){
-
-        dd(slugify("Bonjoué' 452 ùsjk je èta", "-"));
-
         $result = $this->client->query("SELECT * FROM User");
         echo $this->twig->render("home.twig", ["users" => $result]);
     }
@@ -22,10 +19,10 @@ class HomeController extends Controller{
         echo $this->twig->render("articles.twig", ["articles" => $result]);
     }
 
-    public function getFullArticle($idUser, $idArticle){
+    public function getFullArticle($idArticle, $slug){
         $result = $this->client->prepare("SELECT * FROM Article WHERE id =  ?");
         $result->bindValue(1, strVal($idArticle), PDO::PARAM_INT);
         $result->execute();
-        echo $this->twig->render("articleFull.twig", ["article" => $result]);
+        echo $this->twig->render("articleFull.twig", ["article" => $result->fetch()]);
     }
 }

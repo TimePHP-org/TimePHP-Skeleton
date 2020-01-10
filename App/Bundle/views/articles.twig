@@ -8,8 +8,9 @@
 {% for article in articles %}
     <li>
         {# essayer d'utiliser le $router->generate("nom_page") #}
-        <a href="/user/{{ article.id_User }}/article/{{ article.id}}/{{ article.slug }}">{{ article.titre }}</a>
+        <a href="/article/{{ article.id}}/{{ article.slug }}">{{ article.titre }}</a>
     </li>
 {% endfor %}
+
 
 {% endblock %}
