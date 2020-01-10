@@ -11,7 +11,7 @@ class Router{
     /**
      * @var AltoRouter Variable principale du router
      */
-    private $router;
+    public static $router;
 
     /**
      * @var Whoops Générateur de belles erreurs
@@ -22,7 +22,7 @@ class Router{
      * Class constructor
      */
     public function __construct(){
-        $this->router = new AltoRouter();
+        self::$router = new AltoRouter();
         $this->whoops = new Run;
         $this->whoops->pushHandler(new PrettyPageHandler);
         $this->whoops->register();
@@ -35,16 +35,25 @@ class Router{
      * @return self Permet de faire du fluant calling
      */
     public function get(string $url, $object, ?string $name): self{
-        $this->router->map("GET", $url, $object, $name);
+        self::$router->map("GET", $url, $object, $name);
         return $this;
     }
 
+    /**
+     * @param string $name Correspond au nom de la route que l'on souhaite
+     * @param array|null $params (optionel) correspond au parametres à donner a l'url
+     * @return string
+     */
+    public function url(string $name, ?array $params): string{
+        return self::$router->generate($name, $params);
+    }
+
     public function run(){
-        $match = $this->router->match();
+        $match = self::$router->match();
         
         // si l'url de correspond à aucune des routes
         if ($match === false) {
-            header("Location: ".$this->router->generate("home")); //redirection vers la page d'accueil
+            header("Location: ".self::$router->generate("home")); //redirection vers la page d'accueil
 
         // si on renseigne un controller (HomeController#function)
         } else if(is_string($match["target"])) {

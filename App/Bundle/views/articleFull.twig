@@ -4,14 +4,17 @@
 
 {% block body %}
 
+<a href="{{ generate("articleByUser", [1]) }}">Retour</a>
+
 <h1>
     {{ article.titre }}
 </h1>
 
-<p>
+<span class="text-muted">{{ article.date }}</span>
+
+<p class="mt-2">
     {{ article.contenu }}
 </p>
-
 
 
 

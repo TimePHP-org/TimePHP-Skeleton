@@ -6,6 +6,7 @@ use PDO;
 use Twig\Environment;
 use Twig\TwigFunction;
 use Twig\Loader\FilesystemLoader;
+use TimePHP\Foundation\Router;
 
 abstract class Controller{
 
@@ -28,6 +29,9 @@ abstract class Controller{
         // ajout de la fonction asset pour twig afin de récuperer l'url du dossier asset dans le repertoire public
         $this->twig->addFunction(new TwigFunction('asset', function ($asset) {
             return sprintf('/../assets/%s', ltrim($asset, '/'));
+        }));
+        $this->twig->addFunction(new TwigFunction('generate', function (string $name, ?array $params = []) {
+            return sprintf(Router::$router->generate($name, $params));
         }));
 
         $this->client = new PDO("mysql:host=".$ini["my_host"].";dbname=".$ini["my_name"], $ini["my_user"], $ini["my_pass"]);
