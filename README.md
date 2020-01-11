@@ -1,6 +1,9 @@
 # Skeleton-TimePHP (not up to date)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/03be85dea858465b8824d41075fd499b)](https://www.codacy.com/manual/MrAnyx/Skeleton-TimePHP?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MrAnyx/Skeleton-TimePHP&amp;utm_campaign=Badge_Grade)
 [![GitHub issues](https://img.shields.io/github/issues/MrAnyx/Skeleton-TimePHP)](https://github.com/MrAnyx/Skeleton-TimePHP/issues)
+[![GitHub forks](https://img.shields.io/github/forks/MrAnyx/Skeleton-TimePHP)](https://github.com/MrAnyx/Skeleton-TimePHP/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/MrAnyx/Skeleton-TimePHP)](https://github.com/MrAnyx/Skeleton-TimePHP/stargazers)
+[![GitHub license](https://img.shields.io/github/license/MrAnyx/Skeleton-TimePHP)](https://github.com/MrAnyx/Skeleton-TimePHP/blob/master/LICENSE)
 
 TimePHP is a very simple skeleton to rapidly begin a website.
 
