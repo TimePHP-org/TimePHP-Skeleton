@@ -1,5 +1,5 @@
 # Skeleton-TimePHP (not up to date)
-
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/03be85dea858465b8824d41075fd499b)](https://www.codacy.com/manual/MrAnyx/Skeleton-TimePHP?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MrAnyx/Skeleton-TimePHP&amp;utm_campaign=Badge_Grade)
 
 TimePHP is a very simple skeleton to rapidly begin a website.
 
