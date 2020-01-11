@@ -1,6 +1,8 @@
 {
-    "name": "bidanchr/php-twig",
-    "description": "trying to integrate twig to a php project from scratch",
+    "name": "timephp/skeleton",
+    "type": "project",
+    "description": "Simple project stucture to start a php project",
+    "license": "MIT",
     "require": {
         "mongodb/mongodb": "^1.5",
         "twig/twig": "^3.0",
