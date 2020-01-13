@@ -1,7 +1,5 @@
 <?php
 
-// the funcions.php file is imported thanks to the autoloader file
-
 namespace TimePHP\Foundation;
 
 use AltoRouter;
@@ -33,8 +31,8 @@ class Router
     /**
      * Permet d'ajouter une nouvelle route
      * 
-     * @param string $url url to map with the function or controller
-     * @param object $object A function or a string
+     * @param string $url Url utilisée pour lancer le controller
+     * @param object $object Fonction or String representant le controller
      * @param string|null $name (optional) name of the path
      * @return self Permet de faire du fluant calling
      */
