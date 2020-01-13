@@ -6,7 +6,7 @@
  * PHP version 7.4.1
  * 
  * @category Router
- * @link http://domaine.com
+ * @link http://domaine.com Url de la page d'accueil
  */
 
 // Charge l'ensemble des classes et le fichier function.php via composer.json
@@ -20,6 +20,6 @@ $router = new Router();
 $router
     ->get("/", "HomeController#getUsers", "home")
     ->get("/user/[i:idUser]", "HomeController#getArticleByUser", "articleByUser")
-    ->get("/article/[i:idArticle]/[*:slug]", "HomeController#getFullArticle", "article")
+    ->get("/article/[i:idArticle]/[*:slug]", "HomeController#fullArticle", "article")
     ->run();
 
