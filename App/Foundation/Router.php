@@ -33,6 +33,8 @@ class Router
     }
 
     /**
+     * Permet d'ajouter une nouvelle route
+     * 
      * @param string $url url to map with the function or controller
      * @param object $object A function or a string
      * @param string|null $name (optional) name of the path
@@ -45,6 +47,8 @@ class Router
     }
 
     /**
+     * Permet de generer une url via le nom de la route
+     * 
      * @param string $name Correspond au nom de la route que l'on souhaite
      * @param array|null $params (optionel) correspond au parametres à donner a l'url
      * @return string
@@ -55,6 +59,10 @@ class Router
         return self::$router->generate($name, $params);
     }
 
+
+    /**
+     * Permet d'associer le bon controller / fonction avec l'url saisie
+     */
     public function run()
     {
         $match = self::$router->match();

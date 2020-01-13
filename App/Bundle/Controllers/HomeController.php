@@ -7,15 +7,19 @@ use PDO;
 
 
 /**
+ * Controller de la page d'accueil
+ * 
+ * @category Controller
  * @package TimePHP
  * @subpackage Bundle\Controller
- * @category Controller
+ * @link http://domaine.com
  */
 class HomeController extends Controller
 {
 
     /**
      * Finds and returns all users from the database
+     * 
      * @see http://domaine.com/
      */
     public function getUsers()
@@ -26,8 +30,9 @@ class HomeController extends Controller
 
     /**
      * Finds and returns all articles written by a user
+     * 
      * @param int $idUser ID de l'utilisateur selectionné
-     * @see http://domaine.com/user/[idUser]
+     * @see http://domaine.com/user/[int:idUser]
      */
     public function getArticleByUser(int $idUser)
     {
@@ -40,9 +45,10 @@ class HomeController extends Controller
 
     /**
      * Finds and returns all attributes of a specific article
+     * 
      * @param int $idArticle Correspond à l'id de l'article sur lequel on a cliqué
      * @param string $slug Designe le slug de l'article
-     * @see http://domaine.com/article/[idUser]/[slug]
+     * @see http://domaine.com/article/[int:idArticle]/[string:slug]
      */
     public function getFullArticle(int $idArticle, string $slug)
     {
