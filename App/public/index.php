@@ -5,12 +5,12 @@
  *
  * PHP version 5
  *
- * @category Foo
- * @package Foo_Helpers
- * @author Marty McFly <mmcfly@example.com>
- * @copyright 2013-2014 Foo Inc.
+ *  @category Foo
+ *   @package Foo_Helpers
+ *    @author Marty McFly <mmcfly@example.com>
+ *   @copyright 2013-2014 Foo Inc.
  * @license MIT License
- * @link http://example.com
+ *      @link http://example.com
  */
 
 // it loads my classes and the file functions.php thanks to the composer.json file
