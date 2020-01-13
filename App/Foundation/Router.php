@@ -55,33 +55,32 @@ class Router
         return self::$router->generate($name, $params);
     }
 
-
     /**
      * Permet d'associer le bon controller / fonction avec l'url saisie
      */
     public function run()
     {
-        $match = self::$router->match();
+        $lst_match = self::$router->match();
 
-        convert_array_element_to_int($match);
+        convert_array_element_to_int($lst_match);
     
         // si l'url ne correspond à aucune des routes
-        if ($match === false) {
+        if ($lst_match === false) {
             header("Location: ".self::$router->generate("home")); //redirection vers la page d'accueil
 
         // si on renseigne un controller (HomeController#function 
-        } else if(is_string($match["target"])) {
-            list($controller, $action) = explode('#', $match['target']);
+        } else if(is_string($lst_match["target"])) {
+            list($controller, $action) = explode('#', $lst_match['target']);
             $ctrl = "TimePHP\\Bundle\\Controllers\\".$controller;
             if (is_callable(array(new $ctrl, $action))) {
-                call_user_func_array(array(new $ctrl,$action), $match['params']);
+                call_user_func_array(array(new $ctrl,$action), $lst_match['params']);
             } else {
                 header('HTTP/1.1 500 Internal Server Error');
             }
         
         // si on renseigne une fonction au lieu d'un controller
-        } else if(is_object($match["target"]) && is_callable($match["target"])) {
-            call_user_func_array($match["target"], $match["params"]);
+        } else if(is_object($lst_match["target"]) && is_callable($lst_match["target"])) {
+            call_user_func_array($lst_match["target"], $lst_match["params"]);
         } else {
             header('HTTP/1.1 500 Internal Server Error');
         }
