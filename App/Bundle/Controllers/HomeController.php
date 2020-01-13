@@ -11,13 +11,15 @@ use PDO;
  * @subpackage Bundle\Controller
  * @category Controller
  */
-class HomeController extends Controller{
+class HomeController extends Controller
+{
 
     /**
      * Finds and returns all users from the database
      * @see http://domaine.com/
      */
-    public function getUsers(){
+    public function getUsers()
+    {
         $result = $this->client->query("SELECT * FROM User");
         echo $this->twig->render("home.twig", ["users" => $result]);
     }
@@ -27,7 +29,8 @@ class HomeController extends Controller{
      * @param int $idUser ID de l'utilisateur selectionné
      * @see http://domaine.com/user/[idUser]
      */
-    public function getArticleByUser(int $idUser){
+    public function getArticleByUser(int $idUser)
+    {
         $result = $this->client->prepare("SELECT * FROM Article WHERE id_User =  ?");
         $result->bindValue(1, $idUser, PDO::PARAM_INT);
         $result->execute();
@@ -41,7 +44,8 @@ class HomeController extends Controller{
      * @param string $slug Designe le slug de l'article
      * @see http://domaine.com/article/[idUser]/[slug]
      */
-    public function getFullArticle(int $idArticle, string $slug){
+    public function getFullArticle(int $idArticle, string $slug)
+    {
         $result = $this->client->prepare("SELECT * FROM Article WHERE id =  ?");
         $result->bindValue(1, $idArticle, PDO::PARAM_INT);
         $result->execute();

@@ -14,7 +14,8 @@ use TimePHP\Foundation\Router;
  * @category Controller
  */
 
-abstract class Controller{
+abstract class Controller
+{
 
     /**
      * @var Environment
@@ -27,7 +28,8 @@ abstract class Controller{
      */
     public $client;
 
-    public function __construct(){
+    public function __construct()
+    {
         //chargement du fichier app.ini à la racine du projet
         $ini = parse_ini_file("../../app.ini");
         $this->twig = new Environment(new FilesystemLoader(__DIR__ . "/../../". $ini["view_path"]));
