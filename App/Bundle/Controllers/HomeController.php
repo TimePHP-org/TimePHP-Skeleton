@@ -55,6 +55,8 @@ class HomeController extends Controller
         $result = $this->client->prepare("SELECT * FROM Article WHERE id =  ?");
         $result->bindValue(1, $idArticle, PDO::PARAM_INT);
         $result->execute();
-        echo $this->twig->render("articleFull.twig", ["article" => $result->fetch()]);
+        echo $this->twig->render("articleFull.twig", [
+            "article" => $result->fetch()
+        ]);
     }
 }
