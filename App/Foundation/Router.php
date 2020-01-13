@@ -21,9 +21,7 @@ class Router
      */
     private $_whoops;
 
-    /**
-     * Class constructor
-     */
+    //Class constructor
     public function __construct()
     {
         self::$router = new AltoRouter();

@@ -4,10 +4,19 @@
 from faker import Faker
 import pymysql
 from slugify import slugify
+from dotenv import load_dotenv, find_dotenv
+import os
+
+load_dotenv(find_dotenv())
 
 faker = Faker("fr_FR")
 
-connection = pymysql.connect(host='localhost', user='root', password='root', db='dbTest', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+connection = pymysql.connect(host=os.getenv("DB_HOST_PY"),
+    user=os.getenv("DB_USER_PY"),
+    password=os.getenv("DB_PASS_PY"),
+    db=os.getenv("DB_NAME_PY"),
+    charset='utf8mb4',
+    cursorclass=pymysql.cursors.DictCursor)
 
 with connection:
     cur = connection.cursor()
