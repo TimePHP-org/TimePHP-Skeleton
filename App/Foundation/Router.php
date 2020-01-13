@@ -1,5 +1,7 @@
 <?php
 
+// the funcions.php file is imported thanks to the autoloader file
+
 namespace TimePHP\Foundation;
 
 use AltoRouter;
@@ -43,15 +45,19 @@ class Router{
      * @param string $name Correspond au nom de la route que l'on souhaite
      * @param array|null $params (optionel) correspond au parametres à donner a l'url
      * @return string
+     * @deprecated 
      */
-    public function url(string $name, ?array $params): string{
+    public function url(string $name, array $params): string{
         return self::$router->generate($name, $params);
     }
 
     public function run(){
         $match = self::$router->match();
-        
-        // si l'url de correspond à aucune des routes
+
+        //
+        convert_array_element_to_int($match);
+    
+        // si l'url ne correspond à aucune des routes
         if ($match === false) {
             header("Location: ".self::$router->generate("home")); //redirection vers la page d'accueil
 

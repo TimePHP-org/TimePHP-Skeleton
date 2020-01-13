@@ -1,10 +1,5 @@
 <?php
 
-/**
- * TODO Corriger le problème avec les variables dans les url car un est obligé de les convertir en int quand se sont des int.
- * TODO Ajouter le router->generate dans les pages twig
- */
-
 // it loads my classes and the file functions.php thanks to the composer.json file
 require __DIR__ . "/../../vendor/autoload.php";
 

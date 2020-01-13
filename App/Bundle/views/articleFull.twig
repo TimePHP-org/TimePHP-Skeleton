@@ -4,7 +4,7 @@
 
 {% block body %}
 
-<a href="{{ generate("articleByUser", [1]) }}">Retour</a>
+<a href="{{ generate("articleByUser", {idUser: 1}) }}">Retour</a>
 
 <h1>
     {{ article.titre }}

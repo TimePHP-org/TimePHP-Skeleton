@@ -30,7 +30,7 @@ abstract class Controller{
         $this->twig->addFunction(new TwigFunction('asset', function ($asset) {
             return sprintf('/../assets/%s', ltrim($asset, '/'));
         }));
-        $this->twig->addFunction(new TwigFunction('generate', function (string $name, ?array $params = []) {
+        $this->twig->addFunction(new TwigFunction('generate', function (string $name, array $params) {
             return sprintf(Router::$router->generate($name, $params));
         }));
 
