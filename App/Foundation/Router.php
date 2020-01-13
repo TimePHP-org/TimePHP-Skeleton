@@ -19,7 +19,7 @@ class Router
     /**
      * @var Whoops Générateur de belles erreurs
      */
-    private $whoops;
+    private $_whoops;
 
     /**
      * Class constructor
@@ -27,9 +27,9 @@ class Router
     public function __construct()
     {
         self::$router = new AltoRouter();
-        $this->whoops = new Run;
-        $this->whoops->pushHandler(new PrettyPageHandler);
-        $this->whoops->register();
+        $this->_whoops = new Run;
+        $this->_whoops->pushHandler(new PrettyPageHandler);
+        $this->_whoops->register();
     }
 
     /**
@@ -58,7 +58,7 @@ class Router
     public function run()
     {
         $match = self::$router->match();
-        
+
         convert_array_element_to_int($match);
     
         // si l'url ne correspond à aucune des routes
