@@ -35,17 +35,20 @@ abstract class Controller
         $this->twig = new Environment(new FilesystemLoader(__DIR__ . "/../../". $ini["view_path"]));
 
         // ajout de la fonction asset pour twig afin de récuperer l'url du dossier asset dans le repertoire public
-        $this->twig->addFunction(new TwigFunction('asset', function ($asset) {
+        $this->twig->addFunction(new TwigFunction('asset', function ($asset)
+        {
             return sprintf('/../assets/%s', ltrim($asset, '/'));
         }));
-        $this->twig->addFunction(new TwigFunction('generate', function (string $name, array $params) {
+        $this->twig->addFunction(new TwigFunction('generate', function (string $name, array $params)
+        {
             return sprintf(Router::$router->generate($name, $params));
         }));
 
-        $this->client = new PDO("mysql:host=".$ini["my_host"].";dbname=".$ini["my_name"], $ini["my_user"], $ini["my_pass"]);
+        $connection = "mysql:host=".$ini["my_host"].";dbname=".$ini["my_name"];
+        $this->client = new PDO($connection, $ini["my_user"], $ini["my_pass"]);
         // permet d'afficher un rapport des erreurs
         $this->client->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        // indique que le mode par défaut pour le fetch est FETCH_ASSOC (sous forme de tableau associatif)
+        // indique que le mode par défaut pour le fetch est FETCH_ASSOC
         $this->client->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     }
 }
