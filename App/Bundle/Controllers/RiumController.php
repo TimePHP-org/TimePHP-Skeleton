@@ -17,7 +17,7 @@ use TimePHP\Foundation\Controller;
  * Controller de test de perf Rium App
  * 
  * @category Controller
- *  @license MPL-2.0 https://github.com/MrAnyx/Skeleton-TimePHP/blob/master/LICENSE
+ *     @license MPL-2.0 https://github.com/MrAnyx/Skeleton-TimePHP/blob/master/LICENSE
  */
 class RiumController extends Controller
 {
