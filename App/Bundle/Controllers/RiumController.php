@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Controller de test de perf Rium App
+ * 
+ * @category Controller
+ */
+
 namespace TimePHP\Bundle\Controllers;
 
 use PDO;
@@ -7,12 +13,9 @@ use TimePHP\Foundation\Router;
 use TimePHP\Foundation\Controller; 
 
 /**
- * Controller de la page d'accueil
+ * Controller de test de perf Rium App
  * 
  * @category Controller
- * @package TimePHP
- * @subpackage Bundle\Controller
- * @link http://domaine.com/liste
  */
 class RiumController extends Controller
 {
@@ -27,11 +30,13 @@ class RiumController extends Controller
         $start = microtime(true);
         $lst_result = $this->client->query("SELECT * FROM app_bundle_company");
         $end = microtime(true);
-        
-        echo $this->twig->render("companies.twig", [
+
+        $args = [
             "companies" => $lst_result,
             "time" => str_replace(".", ",", strval(($end - $start)*1000))
-        ]);
+        ];
+        
+        echo $this->twig->render("companies.twig", $args);
     }
 
 }
