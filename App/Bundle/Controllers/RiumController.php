@@ -17,7 +17,7 @@ use TimePHP\Foundation\Controller;
  * Controller de test de perf Rium App
  * 
  * @category Controller
-    * @license MPL-2.0
+ *  @license MPL-2.0
  */
 class RiumController extends Controller
 {
