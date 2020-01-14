@@ -1,16 +1,11 @@
 <?php
 
 /**
- * Short description here.
+ * Point d'entrée de l'application
  *
- * PHP version 5
+ * PHP version 7.4.1
  *
- * @category Foo
- * @package Foo_Helpers
- * @author Marty McFly <mmcfly@example.com>
- * @copyright 2013-2014 Foo Inc.
- * @license MIT License
- * @link http://example.com
+ * @category Controller
  */
 
 // Charge l'ensemble des classes et le fichier function.php via composer.json
