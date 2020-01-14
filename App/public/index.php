@@ -21,5 +21,6 @@ $router
     ->get("/", "HomeController#getUsers", "home")
     ->get("/user/[i:idUser]", "HomeController#getArticleByUser", "articleByUser")
     ->get("/article/[i:idArticle]/[*:slug]", "HomeController#fullArticle", "article")
+    ->get("/liste", "RiumController#getCompany", "allCompany")
     ->run();
 

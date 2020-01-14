@@ -15,6 +15,11 @@ class Router
     public static $router;
 
     /**
+     * @var int Variable qui permet de calculer le temps de chargement
+     */
+    public static $loadingTime;
+
+    /**
      * @var Whoops Générateur de belles erreurs
      */
     private $_whoops;
@@ -23,6 +28,7 @@ class Router
     public function __construct()
     {
         self::$router = new AltoRouter();
+        self::$loadingTime = microtime(true);
         $this->_whoops = new Run;
         $this->_whoops->pushHandler(new PrettyPageHandler);
         $this->_whoops->register();
@@ -62,8 +68,6 @@ class Router
     {
         $lst_match = self::$router->match();
 
-        convert_array_element_to_int($lst_match);
-    
         // si l'url ne correspond à aucune des routes
         if ($lst_match === false) {
             header("Location: ".self::$router->generate("home")); //redirection vers la page d'accueil
@@ -73,6 +77,7 @@ class Router
             list($controller, $action) = explode('#', $lst_match['target']);
             $ctrl = "TimePHP\\Bundle\\Controllers\\".$controller;
             if (is_callable(array(new $ctrl, $action))) {
+                convert_array_element_to_int($lst_match);
                 call_user_func_array(array(new $ctrl,$action), $lst_match['params']);
             } else {
                 header('HTTP/1.1 500 Internal Server Error');
@@ -80,6 +85,7 @@ class Router
         
         // si on renseigne une fonction au lieu d'un controller
         } else if(is_object($lst_match["target"]) && is_callable($lst_match["target"])) {
+            convert_array_element_to_int($lst_match);
             call_user_func_array($lst_match["target"], $lst_match["params"]);
         } else {
             header('HTTP/1.1 500 Internal Server Error');

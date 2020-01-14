@@ -43,6 +43,10 @@ abstract class Controller
         {
             return sprintf(Router::$router->generate($name, $params));
         }));
+        $this->twig->addFunction(new TwigFunction('dump', function ($object)
+        {
+            return var_dump($object);
+        }));
 
         $str_connexion = "mysql:host=".$lst_ini["my_host"].";dbname=".$lst_ini["my_name"];
         $this->client = new PDO($str_connexion, $lst_ini["my_user"], $lst_ini["my_pass"]);
