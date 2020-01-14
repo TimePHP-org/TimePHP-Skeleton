@@ -6,6 +6,7 @@ use Cocur\Slugify\Slugify;
  * Convert the title into a slug
  * @param string $title     Titre que l'on veut convertir en slug
  * @param string $separator     Separateur que l'on va utiliser pour la conversion en slug
+ * @return array
  */
 function slugify(string $title, string $separator): string
 {
@@ -16,6 +17,7 @@ function slugify(string $title, string $separator): string
 /**
  * Convert strings that represent integers into real integers
  * @param array $array correspond à la variable $match qui est placée en paramètre
+ * @return array
  */
 function Convert_Array_Element_To_Int(array $array): array
 {
