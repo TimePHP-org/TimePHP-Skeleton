@@ -4,6 +4,7 @@
  * Controller de test de perf Rium App
  * 
  * @category Controller
+ * @link http://domaine.com/liste Lien pour vérifier le controller
  */
 
 namespace TimePHP\Bundle\Controllers;
@@ -16,6 +17,7 @@ use TimePHP\Foundation\Controller;
  * Controller de test de perf Rium App
  * 
  * @category Controller
+ * @license MPL-2.0
  */
 class RiumController extends Controller
 {
@@ -24,6 +26,7 @@ class RiumController extends Controller
      * Récupère l'ensemble des utilisateurs
      * 
      * @see http://domaine.com/liste
+     * @return void
      */
     public function getCompany()
     {
