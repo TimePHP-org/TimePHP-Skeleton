@@ -7,6 +7,7 @@
 ![Repo Size](https://img.shields.io/github/repo-size/MrAnyx/Skeleton-TimePHP)
 ![Code Size](https://img.shields.io/github/languages/code-size/MrAnyx/Skeleton-TimePHP)
 ![Maintenance](https://img.shields.io/maintenance/no/2019)
+[![Unicorn](https://img.shields.io/badge/nyancat-approved-ff69b4.svg)](https://www.youtube.com/watch?v=QH2-TGUlwu4)
 
 TimePHP is a very simple skeleton to rapidly begin a website.
 
