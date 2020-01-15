@@ -1,11 +1,30 @@
 <?php
 
+/**
+ * La classe Router sert à gérer les url et
+ * associe les url au bon controller
+ * 
+ * PHP version 7.4.1
+ * 
+ * @category Router
+ * @package TimePHP
+ * @subpackage Foundation
+ * @author Robin Bidanchon <robin.bidanchon@gmail.com>
+ * @license MPL-2.0 https://github.com/MrAnyx/Skeleton-TimePHP/blob/master/LICENSE
+ * @link any page
+ */
+
 namespace TimePHP\Foundation;
 
 use AltoRouter;
 use Whoops\Run;
 use Whoops\Handler\PrettyPageHandler;
 
+/**
+ * @category Router
+ * @package TimePHP
+ * @subpackage Foundation
+ */
 class Router
 {
 

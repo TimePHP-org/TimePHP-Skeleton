@@ -1,10 +1,18 @@
 <?php
 
 /**
- * Controller de test de perf Rium App
+ * La classe RiumController permet de gérer la récupération de données des capteurs pour
+ * ensuite les envoyer à la vue correspondante.
+ * Cette classe étend Controller ce qui lui permet d'utiliser les variable $twig et $_whoops
+ * 
+ * PHP version 7.4.1
  * 
  * @category Controller
- * @link http://domaine.com/liste Lien pour vérifier le controller
+ * @package TimePHP
+ * @subpackage Bundle\Controllers
+ * @author Robin Bidanchon <robin.bidanchon@gmail.com>
+ * @license MPL-2.0 https://github.com/MrAnyx/Skeleton-TimePHP/blob/master/LICENSE
+ * @link http://domaine.com/liste
  */
 
 namespace TimePHP\Bundle\Controllers;
@@ -17,7 +25,9 @@ use TimePHP\Foundation\Controller;
  * Controller de test de perf Rium App
  * 
  * @category Controller
- * @license MPL-2.0 https://github.com/MrAnyx/Skeleton-TimePHP/blob/master/LICENSE
+ * @package TimePHP
+ * @subpackage Bundle\Controllers
+ * @link http://domaine.com/liste
  */
 class RiumController extends Controller
 {

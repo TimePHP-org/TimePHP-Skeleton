@@ -1,11 +1,17 @@
 <?php
 
 /**
- * Point d'entrée de l'application
- *
+ * Point d'entrée de l'application. C'est ici que sont redirigées l'ensemble des urls
+ * (grâce au .htaccess pour apache)
+ * 
  * PHP version 7.4.1
- *
- * @category Controller
+ * 
+ * @category Router
+ * @package None
+ * @subpackage None
+ * @author Robin Bidanchon <robin.bidanchon@gmail.com>
+ * @license MPL-2.0 https://github.com/MrAnyx/Skeleton-TimePHP/blob/master/LICENSE
+ * @link any page
  */
 
 // Charge l'ensemble des classes et le fichier function.php via composer.json

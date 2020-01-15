@@ -1,5 +1,21 @@
 <?php
 
+/**
+ * Le fichier functions.php sert à créer des fonctions.
+ * Ces fonctions pourront êre utilisées dans les fichier
+ * du framework via l'autoload file de composer
+ * 
+ * PHP version 7.4.1
+ * 
+ * @category Functions
+ * @package None
+ * @subpackage None
+ * @author Robin Bidanchon <robin.bidanchon@gmail.com>
+ * @license MPL-2.0 https://github.com/MrAnyx/Skeleton-TimePHP/blob/master/LICENSE
+ * @link any page
+ */
+
+
 use Cocur\Slugify\Slugify;
 
 /**

@@ -1,5 +1,21 @@
 <?php
 
+/**
+ * La classe Controller permet de mettre en forme les futurs controllers
+ * Elle embarque les attributs liés à la gestions des erreurs ainsi
+ * qu'à l'envoie de la vue à l'utilisateur.
+ * 
+ * PHP version 7.4.1
+ * 
+ * @category Controller
+ * @package TimePHP
+ * @subpackage Foundation
+ * @author Robin Bidanchon <robin.bidanchon@gmail.com>
+ * @license MPL-2.0 https://github.com/MrAnyx/Skeleton-TimePHP/blob/master/LICENSE
+ * @link any page
+ */
+
+
 namespace TimePHP\Foundation;
 
 use PDO;
@@ -9,11 +25,10 @@ use Twig\Loader\FilesystemLoader;
 use TimePHP\Foundation\Router;
 
 /**
+ * @category Controller
  * @package TimePHP
  * @subpackage Foundation
- * @category Controller
  */
-
 abstract class Controller
 {
 
