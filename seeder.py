@@ -28,7 +28,7 @@ with connection:
             faker.simple_profile(sex=None)["mail"]))
 
     for _ in range(500):
-        sql = "INSERT INTO Article(titre, contenu, date, slug, id_User) VALUES (%s, %s, %s, %s, %s)"
+        sql = "INSERT INTO Article(titre, contenu, date, slug, user_id) VALUES (%s, %s, %s, %s, %s)"
         titre = faker.text(max_nb_chars=50, ext_word_list=None)
         cur.execute(sql, (titre, faker.text(max_nb_chars=600, ext_word_list=None),
             faker.date(pattern="%Y-%m-%d", end_datetime=None),
