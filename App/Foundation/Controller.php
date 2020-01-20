@@ -2,7 +2,7 @@
 
 /**
  * La classe Controller permet de mettre en forme les futurs controllers
- * Elle embarque les attributs liés à la gestions des erreurs ainsi
+ * Elle embarque les attributs liés à la gestions de la base de données ainsi
  * qu'à l'envoie de la vue à l'utilisateur.
  * 
  * PHP version 7.4.1

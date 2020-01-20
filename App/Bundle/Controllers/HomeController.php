@@ -3,7 +3,7 @@
 /**
  * La classe HomeController permet de gérer la récupération de données pour
  * ensuite les envoyer à la vue correspondante.
- * Cette classe étend Controller ce qui lui permet d'utiliser les variable $twig et $_whoops
+ * Cette classe étend Controller ce qui lui permet d'utiliser les variable $twig et $client
  * 
  * PHP version 7.4.1
  * 
@@ -52,7 +52,7 @@ class HomeController extends Controller
      */
     public function getArticleByUser(int $idUser)
     {
-        $lst_result = $this->client->prepare("SELECT * FROM Article WHERE id_User =  ?");
+        $lst_result = $this->client->prepare("SELECT * FROM Article WHERE user_id =  ?");
         $lst_result->bindValue(1, $idUser, PDO::PARAM_INT);
         $lst_result->execute();
         echo $this->twig->render("articles.twig", [
@@ -74,7 +74,7 @@ class HomeController extends Controller
         $lst_result->bindValue(1, $idArticle, PDO::PARAM_INT);
         $lst_result->execute();
         echo $this->twig->render("articleFull.twig", [
-            "article" => $lst_result->fetch()
+            "article" => $lst_result->fetch(PDO::FETCH_ASSOC)
         ]);
     }
 }
