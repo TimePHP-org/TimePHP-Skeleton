@@ -263,6 +263,37 @@
         ]
     },
     {
+        "name": "mranyx/timephp",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/MrAnyx/TimePHP.git",
+            "reference": "457c363773d5b6e362d422b58209ad368ea3be85"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/MrAnyx/TimePHP/zipball/457c363773d5b6e362d422b58209ad368ea3be85",
+            "reference": "457c363773d5b6e362d422b58209ad368ea3be85",
+            "shasum": ""
+        },
+        "require": {
+            "altorouter/altorouter": "^2.0",
+            "filp/whoops": "^2.7",
+            "twig/twig": "^3.0"
+        },
+        "time": "2020-01-20T15:59:45+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "TimePHP\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "description": "foundation to create a lightweight n-tier architecture"
+    },
+    {
         "name": "psr/log",
         "version": "1.1.2",
         "version_normalized": "1.1.2.0",

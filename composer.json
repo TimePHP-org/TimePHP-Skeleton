@@ -9,11 +9,12 @@
         "symfony/var-dumper": "^5.0",
         "altorouter/altorouter": "^2.0",
         "filp/whoops": "^2.7",
-        "cocur/slugify": "^4.0"
+        "cocur/slugify": "^4.0",
+        "mranyx/timephp": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "TimePHP\\": "App/"
+            "App\\": "App/"
         },
         "files": ["App/Foundation/functions.php"]
     }

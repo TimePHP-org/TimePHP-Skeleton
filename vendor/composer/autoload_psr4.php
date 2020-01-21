@@ -8,11 +8,12 @@ $baseDir = dirname($vendorDir);
 return array(
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
-    'TimePHP\\' => array($baseDir . '/App'),
+    'TimePHP\\' => array($vendorDir . '/mranyx/timephp/src'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'MongoDB\\' => array($vendorDir . '/mongodb/mongodb/src'),
     'Cocur\\Slugify\\' => array($vendorDir . '/cocur/slugify/src'),
+    'App\\' => array($baseDir . '/App'),
 );
