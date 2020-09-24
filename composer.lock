@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f296ccc1af4c7697eae30d49c674ca4",
+    "content-hash": "81d65f16dc1f0d95f6f0b1d6898c0411",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -1928,16 +1928,16 @@
         },
         {
             "name": "timephp/timephp",
-            "version": "0.0.1-alpha",
+            "version": "0.0.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MrAnyx/TimePHP.git",
-                "reference": "6003b88ff15011e985069344f7012e8320532f90"
+                "reference": "9ec4da2dccb2b9e9c8cffbfc704968cd1020a00e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MrAnyx/TimePHP/zipball/6003b88ff15011e985069344f7012e8320532f90",
-                "reference": "6003b88ff15011e985069344f7012e8320532f90",
+                "url": "https://api.github.com/repos/MrAnyx/TimePHP/zipball/9ec4da2dccb2b9e9c8cffbfc704968cd1020a00e",
+                "reference": "9ec4da2dccb2b9e9c8cffbfc704968cd1020a00e",
                 "shasum": ""
             },
             "require": {
@@ -1956,7 +1956,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Foundation to create a lightweight MVC architecture",
-            "time": "2020-09-24T17:14:33+00:00"
+            "time": "2020-09-24T22:35:12+00:00"
         },
         {
             "name": "twig/twig",

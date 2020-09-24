@@ -24,7 +24,7 @@
     },
     "require": {
         "php": "^7.4",
-        "timephp/timephp": "^0.0.1@alpha"
+        "timephp/timephp": "0.0.2-alpha"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.1"
