@@ -1,21 +1,23 @@
 {
     "name": "timephp/skeleton",
     "type": "project",
-    "description": "Simple project stucture to start a php project",
-    "license": "MIT",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Robin Bidanchon",
+            "email": "robin.bidanchon@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/MrAnyx/Skeleton-TimePHP"
+        }
+    ],
+    "description": "Boilerplate project using TimePHP",
     "require": {
-        "mongodb/mongodb": "^1.5",
-        "twig/twig": "^3.0",
-        "symfony/var-dumper": "^5.0",
-        "altorouter/altorouter": "^2.0",
-        "filp/whoops": "^2.7",
-        "cocur/slugify": "^4.0",
-        "mranyx/timephp": "^1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "App/"
-        },
-        "files": ["App/Foundation/functions.php"]
+        "php": "^7.4"
     }
 }
