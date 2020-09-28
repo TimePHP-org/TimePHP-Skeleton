@@ -10,12 +10,6 @@
         }
     ],
     "minimum-stability": "alpha",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/MrAnyx/Skeleton-TimePHP"
-        }
-    ],
     "description": "Boilerplate project using TimePHP",
     "autoload": {
         "psr-4": {
@@ -24,9 +18,14 @@
     },
     "require": {
         "php": "^7.4",
-        "timephp/timephp": "0.0.2-alpha"
+        "timephp/script": "0.0.1-alpha",
+        "timephp/timephp": "0.0.3-alpha"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.1"
+    },
+    "scripts": {
+        "post-package-install": "TimePHP\\Script::postPackageInstall",
+        "pre-package-uninstall": "TimePHP\\Script::prePackageUninstall"
     }
 }
