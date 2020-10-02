@@ -13,20 +13,21 @@ use TimePHP\Foundation\Controller;
  * @category Controller
  * @package TimePHP
  * @subpackage Bundle\Controller
- * @link http://domaine.com
  */
 class MainController extends Controller
 {
 
     /**
-     * Récupère les infos pour la page d'accueil
+     * Main controller function
+     *
+     * @return void
      */
     public function mainFunction(){
+        return $this->render('home.twig', ["hello" => "Hello World !"]);
+    }
 
-        return $this->render('home.twig', [
-            "hello" => "Hello World!"
-        ]);
-
+    public function mainFunction2(string $slug){
+        return $this->render('home.twig', ["hello" => $slug]);
     }
  
 }

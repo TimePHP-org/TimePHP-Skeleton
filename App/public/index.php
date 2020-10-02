@@ -5,11 +5,10 @@
  */
 
 require __DIR__ . "/../../vendor/autoload.php";
+require __DIR__ . "/../../config/bootstrap.php";
 
 use TimePHP\Foundation\Router;
 
-$router = new Router();
+$router = new Router($options, $twig->getRenderer());
 
-$router
-    ->get("/", "MainController#mainFunction", "home")
-    ->run();
+$router->initialize($routes)->run();
