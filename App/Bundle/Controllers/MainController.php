@@ -23,7 +23,7 @@ class MainController extends Controller
      */
     public function mainFunction(){
 
-        echo $this->twig->render('home.twig', [
+        return $this->render('home.twig', [
             "hello" => "Hello World!"
         ]);
 

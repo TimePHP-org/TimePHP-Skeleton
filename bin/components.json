@@ -1,4 +1,6 @@
 {
     "1": "timephp:script",
-    "2": "timephp:timephp"
+    "2": "timephp:timephp",
+    "3": "timephp:script",
+    "4": "timephp:timephp"
 }
