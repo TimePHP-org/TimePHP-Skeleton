@@ -19,13 +19,12 @@
     "require": {
         "php": "^7.4",
         "timephp/script": "0.0.1-alpha",
-        "timephp/timephp": "0.0.3-alpha"
+        "timephp/timephp": "0.0.3-alpha",
+        "timephp/database": "0.0.1-alpha",
+        "php-di/php-di": "^6.2",
+        "ramsey/uuid": "^4.1"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.1"
-    },
-    "scripts": {
-        "post-package-install": "TimePHP\\Script::postPackageInstall",
-        "pre-package-uninstall": "TimePHP\\Script::prePackageUninstall"
     }
 }
