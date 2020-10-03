@@ -9,7 +9,7 @@
             "role": "developer"
         }
     ],
-    "minimum-stability": "alpha",
+    "minimum-stability": "dev",
     "description": "Boilerplate project using TimePHP",
     "autoload": {
         "psr-4": {
@@ -18,9 +18,8 @@
     },
     "require": {
         "php": "^7.4",
-        "timephp/script": "0.0.1-alpha",
-        "timephp/timephp": "0.0.3-alpha",
-        "timephp/database": "0.0.1-alpha"
+        "timephp/timephp": "0.0.4",
+        "timephp/database": "0.0.2"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.1"
