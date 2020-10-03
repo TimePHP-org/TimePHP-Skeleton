@@ -18,8 +18,8 @@
     },
     "require": {
         "php": "^7.4",
-        "timephp/timephp": "0.0.4",
-        "timephp/database": "0.0.2"
+        "timephp/database": "0.0.2",
+        "timephp/timephp": "0.0.4"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.1"
