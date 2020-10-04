@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47609db9c98c4df89e3ad2c7210ee5c9",
+    "content-hash": "784b1a596d82cf256b691e58b4dcc405",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -726,12 +726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "d4f8e4601fbbe0affb9e467de76d816ad0c20820"
+                "reference": "8690b13ad4da6d54d692afea15aab30b36fee52e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d4f8e4601fbbe0affb9e467de76d816ad0c20820",
-                "reference": "d4f8e4601fbbe0affb9e467de76d816ad0c20820",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8690b13ad4da6d54d692afea15aab30b36fee52e",
+                "reference": "8690b13ad4da6d54d692afea15aab30b36fee52e",
                 "shasum": ""
             },
             "require": {
@@ -807,7 +807,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-03T22:01:35+00:00"
+            "time": "2020-10-04T09:11:05+00:00"
         },
         {
             "name": "opis/closure",
@@ -1330,12 +1330,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "4cd6bfc5b8a95695f3f931c3556ecbc32668763f"
+                "reference": "9df6bfc5afd969d972f005a068576e48a0fccec0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/4cd6bfc5b8a95695f3f931c3556ecbc32668763f",
-                "reference": "4cd6bfc5b8a95695f3f931c3556ecbc32668763f",
+                "url": "https://api.github.com/repos/symfony/console/zipball/9df6bfc5afd969d972f005a068576e48a0fccec0",
+                "reference": "9df6bfc5afd969d972f005a068576e48a0fccec0",
                 "shasum": ""
             },
             "require": {
@@ -1421,7 +1421,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-30T19:48:20+00:00"
+            "time": "2020-10-03T14:00:31+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -2360,16 +2360,16 @@
         },
         {
             "name": "timephp/database",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TimePHP-org/TimePHP-Database.git",
-                "reference": "3f3f29cf3ff5a44b0ffdff382d577c980c60638f"
+                "reference": "d93138957eced9b645babe0fd3134b7da4392043"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TimePHP-org/TimePHP-Database/zipball/3f3f29cf3ff5a44b0ffdff382d577c980c60638f",
-                "reference": "3f3f29cf3ff5a44b0ffdff382d577c980c60638f",
+                "url": "https://api.github.com/repos/TimePHP-org/TimePHP-Database/zipball/d93138957eced9b645babe0fd3134b7da4392043",
+                "reference": "d93138957eced9b645babe0fd3134b7da4392043",
                 "shasum": ""
             },
             "require": {
@@ -2385,7 +2385,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Database support for TimePHP",
-            "time": "2020-10-03T22:13:31+00:00"
+            "time": "2020-10-04T18:23:56+00:00"
         },
         {
             "name": "timephp/timephp",
