@@ -9,7 +9,6 @@ namespace App\Bundle\Controllers;
 use App\Bundle\Entity\User;
 use TimePHP\Foundation\Router;
 use TimePHP\Foundation\Controller;
-use Illuminate\Database\Capsule\Manager;
 use App\Bundle\Repository\UserRepository;
 
 /**
