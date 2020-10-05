@@ -1,13 +1,23 @@
 <?php
 
+use Whoops\Run;
 use TimePHP\Foundation\Twig;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Container\Container;
 use Symfony\Component\Dotenv\Dotenv;
+use Whoops\Handler\PrettyPageHandler;
 use Illuminate\Database\Capsule\Manager;
 
 $dotenv = new Dotenv();
 $dotenv->load(__DIR__ . '/.env');
+
+if($_ENV["APP_ENV"] == 1){
+   $whoops = new Run;
+   $whoops->pushHandler(new PrettyPageHandler);
+   $whoops->register();
+} else if($_ENV["APP_ENV"] == 0) {
+   error_reporting(0);
+}
 
 $routes = require __DIR__ . "/../web/routes.php";
 $options = require __DIR__ . "/options.php";

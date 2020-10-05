@@ -33,7 +33,7 @@ class MainController extends Controller
         $user = $this->container->get(UserRepository::class)->getUser("User 1");
         $final = User::hydrate($user);
         
-        dd($final);
+        // dd($final);
 
 
         return $this->render('home.twig', [
