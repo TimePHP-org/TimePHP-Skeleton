@@ -1,7 +1,5 @@
 <?php
 
-use App\Bundle\Repository\UserRepository;
-
 return [
-   UserRepository::class => DI\create()
+   App\Bundle\Repository\UserRepository::class => DI\create()
 ];

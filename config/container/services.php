@@ -1,7 +1,5 @@
 <?php
 
-use App\Bundle\Services\TestService;
-
 return [
-   TestService::class => DI\create(),
+   App\Bundle\Services\TestService::class => DI\create(),
 ];
