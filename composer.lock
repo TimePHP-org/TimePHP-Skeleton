@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "784b1a596d82cf256b691e58b4dcc405",
+    "content-hash": "b7ada8aaa0cc737c1b133434cb4ce348",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -462,12 +462,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "c81f98a48cd908c7c5174ae49fe8d2465a9da606"
+                "reference": "39f17fd8e1f9a18e125d3f807c2244cde77ef98a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/c81f98a48cd908c7c5174ae49fe8d2465a9da606",
-                "reference": "c81f98a48cd908c7c5174ae49fe8d2465a9da606",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/39f17fd8e1f9a18e125d3f807c2244cde77ef98a",
+                "reference": "39f17fd8e1f9a18e125d3f807c2244cde77ef98a",
                 "shasum": ""
             },
             "require": {
@@ -518,7 +518,7 @@
                 "orm",
                 "sql"
             ],
-            "time": "2020-10-02T14:17:12+00:00"
+            "time": "2020-10-05T19:04:21+00:00"
         },
         {
             "name": "illuminate/events",
@@ -663,12 +663,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "f7a139ff6adf8fb6afffe895195a9de04c12a128"
+                "reference": "cb0cb84319e345614734cb42e34a497f77b5bc49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/f7a139ff6adf8fb6afffe895195a9de04c12a128",
-                "reference": "f7a139ff6adf8fb6afffe895195a9de04c12a128",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/cb0cb84319e345614734cb42e34a497f77b5bc49",
+                "reference": "cb0cb84319e345614734cb42e34a497f77b5bc49",
                 "shasum": ""
             },
             "require": {
@@ -718,7 +718,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-09-17T18:04:00+00:00"
+            "time": "2020-10-05T13:47:39+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -815,25 +815,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "4531e53afe2fc660403e76fb7644e95998bff7bf"
+                "reference": "66b428029cec9b7f52f47711253626982efe820b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/4531e53afe2fc660403e76fb7644e95998bff7bf",
-                "reference": "4531e53afe2fc660403e76fb7644e95998bff7bf",
+                "url": "https://api.github.com/repos/opis/closure/zipball/66b428029cec9b7f52f47711253626982efe820b",
+                "reference": "66b428029cec9b7f52f47711253626982efe820b",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4 || ^7.0"
+                "php": "^5.4 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "jeremeamia/superclosure": "^2.0",
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.5.x-dev"
+                    "dev-master": "3.6.x-dev"
                 }
             },
             "autoload": {
@@ -868,7 +868,7 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2020-09-06T17:02:15+00:00"
+            "time": "2020-10-05T12:49:40+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -2360,16 +2360,16 @@
         },
         {
             "name": "timephp/database",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TimePHP-org/TimePHP-Database.git",
-                "reference": "d93138957eced9b645babe0fd3134b7da4392043"
+                "reference": "a6fb771dd81b1ab42ba2b5ca633c452d34d5a8ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TimePHP-org/TimePHP-Database/zipball/d93138957eced9b645babe0fd3134b7da4392043",
-                "reference": "d93138957eced9b645babe0fd3134b7da4392043",
+                "url": "https://api.github.com/repos/TimePHP-org/TimePHP-Database/zipball/a6fb771dd81b1ab42ba2b5ca633c452d34d5a8ae",
+                "reference": "a6fb771dd81b1ab42ba2b5ca633c452d34d5a8ae",
                 "shasum": ""
             },
             "require": {
@@ -2384,21 +2384,39 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Robin B",
+                    "email": "timephp.org@gmail.com",
+                    "role": "developer"
+                }
+            ],
             "description": "Database support for TimePHP",
-            "time": "2020-10-04T18:23:56+00:00"
+            "homepage": "https://github.com/TimePHP-org/TimePHP-Database",
+            "keywords": [
+                "database",
+                "framework",
+                "mvc",
+                "php",
+                "timePHP"
+            ],
+            "time": "2020-10-05T20:54:52+00:00"
         },
         {
             "name": "timephp/timephp",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TimePHP-org/TimePHP.git",
-                "reference": "8d27f12198d6929712a12bca97021f12f67107c1"
+                "reference": "65c555a43c7b4eaa25d6cf2a40822bab7e178825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TimePHP-org/TimePHP/zipball/8d27f12198d6929712a12bca97021f12f67107c1",
-                "reference": "8d27f12198d6929712a12bca97021f12f67107c1",
+                "url": "https://api.github.com/repos/TimePHP-org/TimePHP/zipball/65c555a43c7b4eaa25d6cf2a40822bab7e178825",
+                "reference": "65c555a43c7b4eaa25d6cf2a40822bab7e178825",
                 "shasum": ""
             },
             "require": {
@@ -2416,8 +2434,25 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Robin B",
+                    "email": "timephp.org@gmail.com",
+                    "role": "developer"
+                }
+            ],
             "description": "Foundation to create a lightweight MVC architecture",
-            "time": "2020-10-03T22:17:53+00:00"
+            "homepage": "https://github.com/TimePHP-org/TimePHP",
+            "keywords": [
+                "framework",
+                "mvc",
+                "php",
+                "timePHP"
+            ],
+            "time": "2020-10-05T20:56:21+00:00"
         },
         {
             "name": "twig/twig",
