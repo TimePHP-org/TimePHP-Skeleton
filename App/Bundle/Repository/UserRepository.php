@@ -11,5 +11,10 @@ class UserRepository {
       $users = User::all();
       return $users;
    }
+
+   public function getUser(string $username){
+      $query = Manager::select("SELECT * FROM User WHERE username = ?", [$username]);
+      return $query;
+   }
    
 }

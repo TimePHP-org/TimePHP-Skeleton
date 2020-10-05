@@ -27,18 +27,22 @@ class MainController extends Controller
     public function mainFunction(){
         
         // $user = User::find("950cbb3b-8433-4b55-afb7-0f8cbdca3f45");
-
         // $user->username = "bonjour";
-
         // $user->save();
 
-        $users = $this->container->get(UserRepository::class)->getAllUsers();
+        $user = $this->container->get(UserRepository::class)->getUser("User 1");
+        $final = User::hydrate($user);
+        
+        dd($final);
 
-        return $this->render('home.twig', ["users" => $users]);
+
+        return $this->render('home.twig', [
+            "message" => "Hello World !"
+        ]);
     }
 
     public function mainFunction2(string $slug){
-        return $this->render('home.twig', ["hello" => $slug]);
+        return $this->render('home.twig', ["message" => $slug]);
     }
  
 }
