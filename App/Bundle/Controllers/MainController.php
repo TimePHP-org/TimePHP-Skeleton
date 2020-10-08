@@ -30,11 +30,10 @@ class MainController extends Controller
         // $user->username = "bonjour";
         // $user->save();
 
-        $user = $this->container->get(UserRepository::class)->getUser("User 1");
-        $final = User::hydrate($user);
+        // $user = $this->container->get(UserRepository::class)->getUser("User 1");
+        // $final = User::hydrate($user);
         
         // dd($final);
-
 
         return $this->render('home.twig', [
             "message" => "Hello World !"
