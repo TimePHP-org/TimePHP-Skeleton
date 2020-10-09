@@ -24,12 +24,6 @@ $options = require __DIR__ . "/options.php";
 
 $twig = new Twig($options);
 
-$builder = new \DI\ContainerBuilder();
-$builder->useAutowiring(true);
-$builder->addDefinitions(__DIR__ . "/container/services.php");
-$builder->addDefinitions(__DIR__ . "/container/repositories.php");
-$container = $builder->build();
-
 $capsule = new Manager;
 $capsule->addConnection([
    'driver'    => 'mysql',
