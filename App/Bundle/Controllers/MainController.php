@@ -8,15 +8,16 @@ namespace App\Bundle\Controllers;
 
 use App\Bundle\Entity\User;
 use TimePHP\Foundation\Router;
-use TimePHP\Foundation\Controller;
+use TimePHP\Exception\SessionException;
 use App\Bundle\Repository\UserRepository;
+use TimePHP\Foundation\AbstractController;
 
 /**
  * @category Controller
  * @package TimePHP
  * @subpackage Bundle\Controller
  */
-class MainController extends Controller
+class MainController extends AbstractController
 {
 
     /**
@@ -36,12 +37,26 @@ class MainController extends Controller
         // dd($final);
 
         return $this->render('home.twig', [
-            "message" => "Hello World !"
+            "message" => "Hello World !",
+            "session" => $_SESSION["username"] ?? "null"
         ]);
     }
 
     public function mainFunction2(string $slug){
         return $this->render('home.twig', ["message" => $slug]);
+    }
+
+    public function connexion(){
+        $this->createSession([
+            "username" => "admin"
+        ]);
+        
+        $this->redirectRouteName("home");
+    }
+
+    public function deconnexion(){
+        $this->closeSession();
+        $this->redirectUrl("/");
     }
  
 }

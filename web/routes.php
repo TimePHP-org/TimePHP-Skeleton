@@ -19,11 +19,25 @@ return [
    ],
    [
       "method" => "get",
-      "url" => "/home3",
-      "name" => "home3",
+      "url" => "/function",
+      "name" => "function",
       "function" => function() {
          echo "hello you !";
       }
+   ],
+   [
+      "method" => "get",
+      "url" => "/connexion",
+      "name" => "connexion",
+      "controller" => MainController::class,
+      "function" => "connexion"
+   ],
+   [
+      "method" => "get",
+      "url" => "/deconnexion",
+      "name" => "deconnexion",
+      "controller" => MainController::class,
+      "function" => "deconnexion"
    ]
    
 ];

@@ -19,6 +19,8 @@ if($_ENV["APP_ENV"] == 1){
    error_reporting(0);
 }
 
+session_start();
+
 $routes = require __DIR__ . "/../web/routes.php";
 $options = require __DIR__ . "/options.php";
 
