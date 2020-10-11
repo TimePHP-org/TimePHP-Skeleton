@@ -19,10 +19,10 @@ return [
    ],
    [
       "method" => "get",
-      "url" => "/function",
+      "url" => "/function/[i:test]",
       "name" => "function",
-      "function" => function() {
-         echo "hello you !";
+      "function" => function(int $test) {
+         dd($test);
       }
    ],
    [

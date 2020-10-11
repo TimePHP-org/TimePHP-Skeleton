@@ -8,16 +8,19 @@
    </ul> #}
 
    <h1>{{ message }}</h1>
-
+{# 
    <a href="{{ generate('connexion') }}">connexion</a>
    <a href="{{ generate('deconnexion') }}">deconnexion</a>
 
    <input type="text" name="username" placeholder="Enter your username"/>
-   <input type="hidden" name="token" value="{{ token }}"/>
+   <input type="hidden" name="token" value="{{ token }}"/> #}
 
 
-   <p>{{ session }}</p>
+   {# <p>{{ session }}</p> #}
 
-   {# {{ test() }} #}
+   {{ test() }}
+   {{ test2() }}
+
+   {{ "bonjour"|shuffle }}
 
 {% endblock %}
