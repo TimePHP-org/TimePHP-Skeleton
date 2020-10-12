@@ -13,14 +13,14 @@ class User extends Model {
     *
     * @var string
     */
-   protected $table = 'User';
+   protected $table = "User";
    
    /**
     * The primary key associated with the table.
     *
     * @var string
     */
-   protected $primaryKey = 'uuid';
+   protected $primaryKey = "uuid";
 
    /**
      * Indicates if the IDs are auto-incrementing.
@@ -34,7 +34,7 @@ class User extends Model {
     *
     * @var string
     */
-   protected $keyType = 'string';
+   protected $keyType = "string";
 
    /**
     * Indicates if the model should be timestamped.
@@ -51,7 +51,7 @@ class User extends Model {
     *
     * @var array
     */
-   protected $fillable = ["uuid", "username", "password", "description", "followers", "github", "instagram", "facebook", "twitter", "role"];
+   protected $fillable = ['username', 'password', 'role'];
 
 
    public static function boot(){

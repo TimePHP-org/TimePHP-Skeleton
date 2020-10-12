@@ -1,6 +1,7 @@
 <?php
 
 use App\Bundle\Controllers\MainController;
+use App\Bundle\Controllers\Rest\MainRestController;
 
 return [
    [
@@ -38,6 +39,12 @@ return [
       "name" => "deconnexion",
       "controller" => MainController::class,
       "function" => "deconnexion"
+   ],
+   [
+      "method" => "get",
+      "url" => "/api/test",
+      "name" => "api_test",
+      "controller" => MainRestController::class,
+      "function" => "mainRestFunction"
    ]
-   
 ];

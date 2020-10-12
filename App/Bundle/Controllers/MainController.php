@@ -27,14 +27,17 @@ class MainController extends AbstractController
      */
     public function mainFunction(){
         
-        // $user = User::find("950cbb3b-8433-4b55-afb7-0f8cbdca3f45");
-        // $user->username = "bonjour";
+        // $user = User::find("cb8c89d9-46f4-47ec-b713-290b30824347");
+        // $user->role = "admin";
         // $user->save();
 
-        // $user = $this->container->get(UserRepository::class)->getUser("User 1");
+        // $user = new User();
+        // $user->username = "MsVisper";
+        // $user->password = password_hash("MsVisper", PASSWORD_BCRYPT);
+        // $user->save();
+
+        // $user = UserRepository::getAllUsers();
         // $final = User::hydrate($user);
-        
-        // dd($final);
 
         return $this->render('home.twig', [
             "message" => "Hello World !",

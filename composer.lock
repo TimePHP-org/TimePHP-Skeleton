@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83c0574a1be36d411a2af303aed86c9f",
+    "content-hash": "734a202ecc458516fd983ada4d04c370",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -2171,6 +2171,48 @@
             "time": "2020-10-09T18:39:53+00:00"
         },
         {
+            "name": "timephp/rest",
+            "version": "0.0.1-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TimePHP-org/TimePHP-Rest.git",
+                "reference": "d59b010d3b1af5dd27ec8715174b3808a93d6c65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TimePHP-org/TimePHP-Rest/zipball/d59b010d3b1af5dd27ec8715174b3808a93d6c65",
+                "reference": "d59b010d3b1af5dd27ec8715174b3808a93d6c65",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TimePHP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Robin B",
+                    "email": "timephp.org@gmail.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "Rest controller to create api routes",
+            "homepage": "https://github.com/TimePHP-org/TimePHP-Rest",
+            "keywords": [
+                "framework",
+                "mvc",
+                "php",
+                "rest",
+                "timePHP"
+            ],
+            "time": "2020-10-11T20:05:46+00:00"
+        },
+        {
             "name": "timephp/timephp",
             "version": "0.0.10",
             "source": {
@@ -2450,7 +2492,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "timephp/rest": 15
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
