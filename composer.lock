@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "594935635322ff26ffa051d9520d2053",
+    "content-hash": "04b6029cc6e0f96c91cfeaf7d29ecffa",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -2272,16 +2272,16 @@
         },
         {
             "name": "timephp/timephp",
-            "version": "0.0.12",
+            "version": "0.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TimePHP-org/TimePHP.git",
-                "reference": "b42345ac0daf37f3bf6af47ea04468ac28ca1ae9"
+                "reference": "363607ae9e3ad2c2ab351f60a9095deb3e3f3977"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TimePHP-org/TimePHP/zipball/b42345ac0daf37f3bf6af47ea04468ac28ca1ae9",
-                "reference": "b42345ac0daf37f3bf6af47ea04468ac28ca1ae9",
+                "url": "https://api.github.com/repos/TimePHP-org/TimePHP/zipball/363607ae9e3ad2c2ab351f60a9095deb3e3f3977",
+                "reference": "363607ae9e3ad2c2ab351f60a9095deb3e3f3977",
                 "shasum": ""
             },
             "require": {
@@ -2316,7 +2316,7 @@
                 "php",
                 "timePHP"
             ],
-            "time": "2020-10-14T16:44:51+00:00"
+            "time": "2020-10-15T20:18:40+00:00"
         },
         {
             "name": "twig/twig",
