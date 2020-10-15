@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbd28b13139eb193b64391d300c973d6",
+    "content-hash": "594935635322ff26ffa051d9520d2053",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -612,6 +612,52 @@
             "description": "The Illuminate Macroable package.",
             "homepage": "https://laravel.com",
             "time": "2020-06-08T14:13:16+00:00"
+        },
+        {
+            "name": "illuminate/pagination",
+            "version": "v8.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/pagination.git",
+                "reference": "61d2b0082ca10f74a74f99f47e7277175fb44a96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/pagination/zipball/61d2b0082ca10f74a74f99f47e7277175fb44a96",
+                "reference": "61d2b0082ca10f74a74f99f47e7277175fb44a96",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/collections": "^8.0",
+                "illuminate/contracts": "^8.0",
+                "illuminate/support": "^8.0",
+                "php": "^7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Pagination\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Pagination package.",
+            "homepage": "https://laravel.com",
+            "time": "2020-10-07T19:58:27+00:00"
         },
         {
             "name": "illuminate/pipeline",
@@ -2136,21 +2182,22 @@
         },
         {
             "name": "timephp/database",
-            "version": "0.0.8",
+            "version": "0.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TimePHP-org/TimePHP-Database.git",
-                "reference": "a2c98ef8bda655af2d8670dac139912643a28afb"
+                "reference": "61e044976c18629d73e1bb22360c6f8971cde7ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TimePHP-org/TimePHP-Database/zipball/a2c98ef8bda655af2d8670dac139912643a28afb",
-                "reference": "a2c98ef8bda655af2d8670dac139912643a28afb",
+                "url": "https://api.github.com/repos/TimePHP-org/TimePHP-Database/zipball/61e044976c18629d73e1bb22360c6f8971cde7ed",
+                "reference": "61e044976c18629d73e1bb22360c6f8971cde7ed",
                 "shasum": ""
             },
             "require": {
                 "illuminate/database": "^8.6",
                 "illuminate/events": "^8.6",
+                "illuminate/pagination": "^8.10",
                 "ramsey/uuid": "^4.1"
             },
             "type": "library",
@@ -2179,7 +2226,7 @@
                 "php",
                 "timePHP"
             ],
-            "time": "2020-10-14T16:47:10+00:00"
+            "time": "2020-10-15T08:09:23+00:00"
         },
         {
             "name": "timephp/rest",

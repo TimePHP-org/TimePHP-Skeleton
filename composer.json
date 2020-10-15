@@ -27,7 +27,7 @@
     },
     "require": {
         "php": "^7.4",
-        "timephp/database": "^0.0.8",
+        "timephp/database": "^0.0.9",
         "timephp/timephp": "^0.0.12",
         "timephp/rest": "^0.0.3"
     },
