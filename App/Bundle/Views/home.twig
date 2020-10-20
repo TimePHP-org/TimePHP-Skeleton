@@ -1,26 +1,26 @@
 {% extends "template/layout.twig" %}
 {% block body %}
 
-   {# <ul>
-   {% for user in users %}
-      <li>{{ user.username }}</li>
-   {% endfor %}
-   </ul> #}
-
-   <h1>{{ message }}</h1>
-{# 
-   <a href="{{ generate('connexion') }}">connexion</a>
-   <a href="{{ generate('deconnexion') }}">deconnexion</a>
-
-   <input type="text" name="username" placeholder="Enter your username"/>
-   <input type="hidden" name="token" value="{{ token }}"/> #}
-
-
-   {# <p>{{ session }}</p> #}
-
-   {{ test() }}
-   {{ test2() }}
-
-   {{ "bonjour"|shuffle }}
+	<div class="container-fluid d-flex justify-content-center align-items-center">
+		<div>
+			<img src="{{ asset('src/logo_horizontal.svg') }}" alt="main logo" id="logo">
+			<div id="description" class="mt-5 d-flex justify-content-center">
+            Welcome to your TimePHP application
+         </div>
+			<div id="links" class="mt-5 d-flex justify-content-center">
+				<ul>
+					<li>Get started</li>
+					<li>bvonjour</li>
+					<li>bvonjour</li>
+					<li>bvonjour</li>
+				</ul>
+			</div>
+         <div id="github" class="mt-5 d-flex justify-content-center">
+            <a href="#">
+               <img src="{{ asset('src/github_logo/github-logo.svg') }}" alt="github logo">
+            </a>
+         </div>
+		</div>
+	</div>
 
 {% endblock %}

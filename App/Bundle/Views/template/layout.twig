@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang='en'>
 
-<head>
-    <meta charset='UTF-8'>
-    <meta name='description' content='Boilerplate using TimePHP'>
-    <meta name='keywords' content='HTML, CSS, TWIG, PHP'>
-    <meta name='author' content='Robin Bidanchon'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    
-    <!-- UIkit CSS -->
-    {# <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" /> #}
-    
-    <!-- UIkit JS -->
-    {# <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script> #}
-    {# <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script> #}
-    
-    <!-- Bootstrap css -->
-    {# <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> #}
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='description' content='Boilerplate using TimePHP'>
+		<meta name='keywords' content='HTML, CSS, TWIG, PHP'>
+		<meta
+		name='viewport' content='width=device-width, initial-scale=1.0'>
 
-    <link rel='stylesheet' href='{{ asset("css/main.css") }}'>
-    {% block style %}{% endblock %}
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
 
-    <title>{% block title %}Website title{% endblock %}</title>
+		<link rel='stylesheet' href='{{ asset("css/main.css") }}'>
+		{% block style %}{% endblock %}
 
-</head>
+		<link rel="icon" href="{{ asset('src/logo.ico') }}"/>
 
-<body>
+		<title>
+			{% block title %}Application{% endblock %}
+		</title>
 
-    {% block body %}{% endblock %}
-</body>
+	</head>
 
-{% block javascript %}{% endblock %}
+	<body>
+		{% block body %}{% endblock %}
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	{% block javascript %}{% endblock %}
 
 </html>

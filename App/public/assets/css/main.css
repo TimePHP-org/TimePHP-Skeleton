@@ -1,6 +1,25 @@
-@import './base.css';
+@import "./base.css";
 
-h1{
-   text-align: center;
-   color: red;
+.container-fluid {
+   height: 100vh;
+   position: relative;
+}
+
+#logo {
+   height: 180px;
+}
+
+#links ul{
+   list-style: none;
+   display: inline;
+}
+
+#links ul li {
+   display: inline;
+   margin: 0 20px 0 20px;
+}
+
+#github img {
+   height: 50px;
+   width: 50px;
 }
