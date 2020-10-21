@@ -3,23 +3,25 @@
 
 	<div class="container-fluid d-flex justify-content-center align-items-center">
 		<div>
-			<img src="{{ asset('src/logo_horizontal.svg') }}" alt="main logo" id="logo">
+
+			{% include component('logo.twig') %}
+
 			<div id="description" class="mt-5 d-flex justify-content-center">
-            Welcome to your TimePHP application
-         </div>
+				Welcome to your TimePHP application
+			</div>
 			<div id="links" class="mt-5 d-flex justify-content-center">
 				<ul>
-					<li>Get started</li>
-					<li>bvonjour</li>
-					<li>bvonjour</li>
-					<li>bvonjour</li>
+					<li><a href="https://timephp-org.github.io/TimePHP-Docs/#/" target="_blank">Documentation</a></li>
+					<li><a href="https://timephp-org.github.io/TimePHP-Docs/#/?id=introduction-to-the-timephp-framework" target="_blank">Get started</a></li>
+					<li><a href="https://timephp-org.github.io/TimePHP-Docs/#/core/routing" target="_blank">Core features</a></li>
+					<li><a href="https://github.com/TimePHP-org/TimePHP" target="_blank">Github</a></li>
 				</ul>
 			</div>
-         <div id="github" class="mt-5 d-flex justify-content-center">
-            <a href="#">
-               <img src="{{ asset('src/github_logo/github-logo.svg') }}" alt="github logo">
-            </a>
-         </div>
+			<div id="github" class="mt-5 d-flex justify-content-center">
+				<a href="https://github.com/TimePHP-org/TimePHP" target="_blank">
+					<img src="{{ asset('src/github_logo/github-logo.svg') }}" alt="github logo">
+				</a>
+			</div>
 		</div>
 	</div>
 

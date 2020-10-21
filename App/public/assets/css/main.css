@@ -9,17 +9,29 @@
    height: 180px;
 }
 
-#links ul{
-   list-style: none;
-   display: inline;
-}
-
 #links ul li {
    display: inline;
    margin: 0 20px 0 20px;
 }
 
+#links ul li a{
+   color: rgb(104, 104, 104);
+   font-size: 18px;
+}
+
+#links ul li a:hover {
+   text-decoration: none;
+   color: rgb(32, 32, 32);
+}
+
 #github img {
    height: 50px;
    width: 50px;
+}
+
+#description{
+   font-size: 22px;
+   font-style: italic;
+   color: rgb(155, 155, 155);
+   letter-spacing: 1px;
 }
