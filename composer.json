@@ -28,8 +28,7 @@
     "require": {
         "php": "^7.4",
         "timephp/database": "^0.0.9",
-        "timephp/timephp": "^0.0.16",
-        "timephp/rest": "^0.0.3"
+        "timephp/timephp": "^0.0.16"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.1"

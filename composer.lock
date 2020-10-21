@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2224091a101d36d13d351644a10ddd51",
+    "content-hash": "f20762114eeb195d0b3d53f569d3b79c",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -268,7 +268,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v8.11.1",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -317,7 +317,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.11.1",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -367,7 +367,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v8.11.1",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -414,7 +414,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.11.1",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -458,7 +458,7 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v8.11.1",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
@@ -522,7 +522,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v8.11.1",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -573,7 +573,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.11.1",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -615,7 +615,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v8.11.1",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -661,7 +661,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v8.11.1",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -705,16 +705,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.11.1",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "38e1f4cded0d79769867e4b20615dbe01f49fe1e"
+                "reference": "52fa3552b996746e48bd539bc80877151c8503b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/38e1f4cded0d79769867e4b20615dbe01f49fe1e",
-                "reference": "38e1f4cded0d79769867e4b20615dbe01f49fe1e",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/52fa3552b996746e48bd539bc80877151c8503b1",
+                "reference": "52fa3552b996746e48bd539bc80877151c8503b1",
                 "shasum": ""
             },
             "require": {
@@ -764,7 +764,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-10-19T15:03:39+00:00"
+            "time": "2020-10-20T20:12:11+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -2227,48 +2227,6 @@
                 "timePHP"
             ],
             "time": "2020-10-15T08:09:23+00:00"
-        },
-        {
-            "name": "timephp/rest",
-            "version": "0.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TimePHP-org/TimePHP-Rest.git",
-                "reference": "a4e01efc5d28ca851f1fe212032dd5897026198a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TimePHP-org/TimePHP-Rest/zipball/a4e01efc5d28ca851f1fe212032dd5897026198a",
-                "reference": "a4e01efc5d28ca851f1fe212032dd5897026198a",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TimePHP\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Robin B",
-                    "email": "timephp.org@gmail.com",
-                    "role": "developer"
-                }
-            ],
-            "description": "Rest controller to create api routes",
-            "homepage": "https://github.com/TimePHP-org/TimePHP-Rest",
-            "keywords": [
-                "framework",
-                "mvc",
-                "php",
-                "rest",
-                "timePHP"
-            ],
-            "time": "2020-10-14T16:47:54+00:00"
         },
         {
             "name": "timephp/timephp",
